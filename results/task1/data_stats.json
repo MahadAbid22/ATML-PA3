@@ -1,0 +1,17 @@
+{
+  "n_selected": 40000,
+  "last_source_index": 40001,
+  "source_rows_scanned": 40002,
+  "excluded": {
+    "empty": 0,
+    "gsm8k_test_match": 0,
+    "too_long": 2
+  },
+  "tokens_total": 9908423,
+  "response_tokens_total": 7100056,
+  "length_mean": 247.710575,
+  "length_p50": 219.0,
+  "length_p99": 681.0,
+  "length_max": 1941,
+  "example_prompt": "<|im_start|>user\n<question><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+}

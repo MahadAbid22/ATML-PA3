@@ -1,0 +1,88 @@
+{
+  "method": "lora_r4",
+  "config": {
+    "kind": "lora",
+    "lr": 0.0002,
+    "r": 4,
+    "alpha": 8,
+    "dropout": 0.05
+  },
+  "train_config": {
+    "micro_batch": 2,
+    "grad_accum": 16,
+    "updates": 1250,
+    "warmup": 38,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "checkpoint_updates": [
+      312,
+      625,
+      937,
+      1250
+    ],
+    "midpoint_update": 625
+  },
+  "trainable_params": 2523136,
+  "train_seconds": 4603.890110804234,
+  "checkpoint_seconds": 0.6449253149330616,
+  "skipped_updates": [],
+  "checkpoints": [
+    {
+      "update": 312,
+      "weights_bytes": 10216047,
+      "trainer_state_bytes": 20539133,
+      "total_bytes": 30755180
+    },
+    {
+      "update": 625,
+      "weights_bytes": 10216047,
+      "trainer_state_bytes": 20539197,
+      "total_bytes": 30755244
+    },
+    {
+      "update": 937,
+      "weights_bytes": 10216047,
+      "trainer_state_bytes": 20539261,
+      "total_bytes": 30755308
+    },
+    {
+      "update": 1250,
+      "weights_bytes": 10216047,
+      "trainer_state_bytes": 20539325,
+      "total_bytes": 30755372
+    }
+  ],
+  "displacement_l2": {},
+  "overhead": {
+    "n_adapted_modules": 196,
+    "basis_seconds": 0.0,
+    "basis_bytes": 0,
+    "model_build_seconds": 1.7730591893196106,
+    "export_seconds": 0.018341417890042067,
+    "export_bytes": 10219409
+  },
+  "gpu": {
+    "peak_allocated_gb": 4.7006940841674805,
+    "peak_reserved_gb": 11.400390625
+  },
+  "resumed_from_update": 0,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

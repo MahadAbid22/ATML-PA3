@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrl}
+\toprule
+Method & Trainable & Time (min) & Peak mem (GB) & Weights & Full ckpt & Method overhead \\
+\midrule
+Full FT & 596.05M & 51.5 & 13.3 & 2.22 GB & 6.66 GB & -- \\
+Full FT + L2-SP & 596.05M & 50.7 & 15.5 & 2.22 GB & 6.66 GB & ref 2.22 GB; penalty 0.4 min \\
+LoRA r=4 & 2.52M & 76.7 & 4.7 & 10 MB & 0.03 GB & -- \\
+LoRA r=16 & 10.09M & 76.9 & 4.8 & 39 MB & 0.11 GB & -- \\
+OPLoRA r=16 & 10.09M & 102.8 & 5.1 & 39 MB & 0.11 GB & bases 308 MB, SVD 9.7 s; export 0.0 s \\
+\bottomrule
+\end{tabular}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Task 1 training resources (one epoch, 1,250 updates).}
+\label{tab:t1-resources}
+\end{table}

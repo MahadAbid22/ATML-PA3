@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Model & HS acc & HS acc\_norm & ARC-E acc & ARC-E acc\_norm & BoolQ acc \\
+\midrule
+Baseline & 37.5 & 47.3 & 60.9 & 56.0 & 64.3 \\
+Full FT (mid) & 36.9 & 45.6 & 65.7 & 62.0 & 60.4 \\
+Full FT & 37.4 & 46.1 & 66.8 & 63.5 & 60.8 \\
+Full FT + L2-SP & 37.7 & 46.4 & 66.1 & 63.3 & 66.5 \\
+LoRA r=4 & 37.6 & 47.4 & 65.2 & 63.2 & 67.6 \\
+LoRA r=16 & 37.8 & 47.5 & 66.9 & 63.7 & 71.9 \\
+OPLoRA r=16 & 37.9 & 47.4 & 66.1 & 63.0 & 71.9 \\
+\bottomrule
+\end{tabular}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Raw and length-normalised accuracy (\%).}
+\label{tab:t1-rawacc}
+\end{table}

@@ -1,0 +1,11 @@
+{
+  "condition": "lora_r4",
+  "method": "lora_r4",
+  "update": 1250,
+  "merge_check": {
+    "max_abs_diff_fp32_merged_vs_unmerged": 7.05718994140625e-05,
+    "max_abs_diff_fp16_merged_vs_fp32_unmerged": 0.10336017608642578,
+    "argmax_agreement_fp16_merged": 0.9886363744735718,
+    "logit_abs_scale": 2.6387999057769775
+  }
+}

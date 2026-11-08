@@ -1,0 +1,11 @@
+{
+  "condition": "oplora_r16",
+  "method": "oplora_r16",
+  "update": 1250,
+  "merge_check": {
+    "max_abs_diff_fp32_merged_vs_unmerged": 5.53131103515625e-05,
+    "max_abs_diff_fp16_merged_vs_fp32_unmerged": 0.05904531478881836,
+    "argmax_agreement_fp16_merged": 0.9886363744735718,
+    "logit_abs_scale": 2.643322229385376
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "gsm8k": {
+    "flexible_extract_em": 0.6171341925701289,
+    "strict_match_em": 0.0,
+    "flexible_extract_em_stderr": 0.013389223491820467,
+    "n": 1319,
+    "truncation_rate": 0.01061410159211524,
+    "unextractable_rate_flexible": 0.000758150113722517,
+    "unextractable_rate_strict": 1.0,
+    "mean_response_tokens": 142.90371493555725,
+    "diagnostic_boxed_or_last_number_acc": 0.6171341925701289
+  },
+  "timing": {
+    "gsm8k_seconds": 474.8182038250379
+  },
+  "versions": {
+    "gsm8k_cot": 3.0
+  }
+}

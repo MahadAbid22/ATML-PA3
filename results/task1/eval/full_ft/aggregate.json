@@ -1,0 +1,76 @@
+{
+  "condition": "full_ft",
+  "model_path": "/workspace/pa3_outputs/task1/models/full_ft",
+  "gsm8k": {
+    "flexible_extract_em": 0.6391205458680819,
+    "strict_match_em": 0.0,
+    "flexible_extract_em_stderr": 0.013228626753925138,
+    "n": 1319,
+    "truncation_rate": 0.006823351023502654,
+    "unextractable_rate_flexible": 0.0,
+    "unextractable_rate_strict": 1.0,
+    "mean_response_tokens": 138.17134192570128,
+    "diagnostic_boxed_or_last_number_acc": 0.6391205458680819
+  },
+  "hellaswag": {
+    "acc": 0.37353116908982276,
+    "acc_stderr": 0.0048275265848897455,
+    "acc_norm": 0.46116311491734713,
+    "acc_norm_stderr": 0.00497470642843438,
+    "n": 10042
+  },
+  "boolq": {
+    "acc": 0.6079510703363914,
+    "acc_stderr": 0.008538802914911938,
+    "acc_norm": null,
+    "acc_norm_stderr": null,
+    "n": 3270
+  },
+  "arc_easy": {
+    "acc": 0.6679292929292929,
+    "acc_stderr": 0.009663817543072557,
+    "acc_norm": 0.6346801346801347,
+    "acc_norm_stderr": 0.009880576614806942,
+    "n": 2376
+  },
+  "timing": {
+    "gsm8k_seconds": 395.82809022814035,
+    "likelihood_seconds": 124.36232633702457
+  },
+  "gpu": {
+    "peak_allocated_gb": 12.619722366333008,
+    "peak_reserved_gb": 23.01171875
+  },
+  "lm_eval_config": {
+    "gsm8k_task": "gsm8k_cot",
+    "num_fewshot": 0,
+    "max_gen_toks": 1024,
+    "greedy": true,
+    "chat_template_gsm8k": true,
+    "enable_thinking": false,
+    "dtype": "float16",
+    "batch_size_gen": 64,
+    "batch_size_ll": 16,
+    "limit": null
+  },
+  "task_versions": {
+    "gsm8k_cot": 3.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

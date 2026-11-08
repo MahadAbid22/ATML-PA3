@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & GSM8K & HellaSwag & BoolQ & ARC-E & GSM8K strict & No extr. & Trunc. \\
+\midrule
+Baseline & 43.3 & 47.3 & 64.3 & 56.0 & 0.0 & 0.0 & 1.0 \\
+\midrule
+Full FT (mid) & 56.5 (+13.2) & 45.6 ($-$1.7) & 60.4 ($-$3.9) & 62.0 (+6.0) & 0.0 & 0.0 & 1.0 \\
+Full FT & 63.9 (+20.6) & 46.1 ($-$1.2) & 60.8 ($-$3.5) & 63.5 (+7.5) & 0.0 & 0.0 & 0.7 \\
+\midrule
+Full FT + L2-SP & 64.5 (+21.2) & 46.4 ($-$0.9) & 66.5 (+2.1) & 63.3 (+7.3) & 0.0 & 0.0 & 0.8 \\
+LoRA r=4 & 59.0 (+15.7) & 47.4 (+0.1) & 67.6 (+3.2) & 63.2 (+7.2) & 0.0 & 0.0 & 1.0 \\
+LoRA r=16 & 61.7 (+18.4) & 47.5 (+0.2) & 71.9 (+7.6) & 63.7 (+7.7) & 0.0 & 0.1 & 1.1 \\
+OPLoRA r=16 & 61.3 (+18.0) & 47.4 (+0.1) & 71.9 (+7.6) & 63.0 (+7.0) & 0.0 & 0.1 & 0.6 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize GSM8K: flexible-extract EM; HellaSwag/ARC-E: acc\_norm; BoolQ: acc. No extr./Trunc.: GSM8K unextractable and truncated responses.}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Task 1 benchmark scores (\%) and change from baseline (pp).}
+\label{tab:t1-bench}
+\end{table}

@@ -1,0 +1,93 @@
+{
+  "method": "oplora_r16",
+  "config": {
+    "kind": "oplora",
+    "lr": 0.0002,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "k": 128
+  },
+  "train_config": {
+    "micro_batch": 2,
+    "grad_accum": 16,
+    "updates": 1250,
+    "warmup": 38,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "checkpoint_updates": [
+      312,
+      625,
+      937,
+      1250
+    ],
+    "midpoint_update": 625
+  },
+  "trainable_params": 10092544,
+  "train_seconds": 6169.0338066932745,
+  "checkpoint_seconds": 1.0803029825910926,
+  "skipped_updates": [],
+  "checkpoints": [
+    {
+      "update": 312,
+      "weights_bytes": 40493679,
+      "trainer_state_bytes": 81094397,
+      "total_bytes": 121588076
+    },
+    {
+      "update": 625,
+      "weights_bytes": 40493679,
+      "trainer_state_bytes": 81094461,
+      "total_bytes": 121588140
+    },
+    {
+      "update": 937,
+      "weights_bytes": 40493679,
+      "trainer_state_bytes": 81094525,
+      "total_bytes": 121588204
+    },
+    {
+      "update": 1250,
+      "weights_bytes": 40493679,
+      "trainer_state_bytes": 81094589,
+      "total_bytes": 121588268
+    }
+  ],
+  "displacement_l2": {},
+  "overhead": {
+    "n_adapted_modules": 196,
+    "basis_seconds": 9.734357882291079,
+    "basis_bytes": 322961408,
+    "model_build_seconds": 11.619274605996907,
+    "export_seconds": 0.04589839372783899,
+    "export_bytes": 40497041,
+    "constraint_check": {
+      "max_rel_UkT_Btilde": 0.00012293933832552284,
+      "max_rel_Atilde_Vk": 0.00018713853205554187
+    }
+  },
+  "gpu": {
+    "peak_allocated_gb": 5.1143317222595215,
+    "peak_reserved_gb": 11.6875
+  },
+  "resumed_from_update": 0,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

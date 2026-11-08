@@ -90,8 +90,11 @@ def benchmark_figure(aggs):
         ax.set_title(f"{name} (base {100 * base:.1f}%)")
         ax.set_xlabel("Δ vs baseline (pp)")
         ax.grid(axis="y", visible=False)
+        ax.tick_params(axis="y", length=0)
+        ax.margins(x=0.28)  # room for the value labels on both sides
         for yi, v in zip(y, vals):
-            ax.text(v, yi, f" {v:+.1f}", va="center", ha="left" if v >= 0 else "right", fontsize=6)
+            ax.text(v, yi, f" {v:+.1f}" if v >= 0 else f"{v:+.1f} ", va="center", ha="left" if v >= 0 else "right",
+                    fontsize=6)
     fig.tight_layout()
     savefig(fig, "task1_benchmark_deltas")
 

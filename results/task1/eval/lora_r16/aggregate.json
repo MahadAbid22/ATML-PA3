@@ -1,0 +1,76 @@
+{
+  "condition": "lora_r16",
+  "model_path": "/workspace/pa3_outputs/task1/models/lora_r16",
+  "gsm8k": {
+    "flexible_extract_em": 0.6171341925701289,
+    "strict_match_em": 0.0,
+    "flexible_extract_em_stderr": 0.013389223491820467,
+    "n": 1319,
+    "truncation_rate": 0.01061410159211524,
+    "unextractable_rate_flexible": 0.000758150113722517,
+    "unextractable_rate_strict": 1.0,
+    "mean_response_tokens": 142.90371493555725,
+    "diagnostic_boxed_or_last_number_acc": 0.6171341925701289
+  },
+  "hellaswag": {
+    "acc": 0.3776140211113324,
+    "acc_stderr": 0.004837995637638387,
+    "acc_norm": 0.47540330611431986,
+    "acc_norm_stderr": 0.004983740145218814,
+    "n": 10042
+  },
+  "boolq": {
+    "acc": 0.7189602446483181,
+    "acc_stderr": 0.007861924290695656,
+    "acc_norm": null,
+    "acc_norm_stderr": null,
+    "n": 3270
+  },
+  "arc_easy": {
+    "acc": 0.6687710437710438,
+    "acc_stderr": 0.009657641311350737,
+    "acc_norm": 0.6367845117845118,
+    "acc_norm_stderr": 0.009868397136118761,
+    "n": 2376
+  },
+  "timing": {
+    "gsm8k_seconds": 474.8182038250379,
+    "likelihood_seconds": 130.47859422396868
+  },
+  "gpu": {
+    "peak_allocated_gb": 12.619722366333008,
+    "peak_reserved_gb": 23.01171875
+  },
+  "lm_eval_config": {
+    "gsm8k_task": "gsm8k_cot",
+    "num_fewshot": 0,
+    "max_gen_toks": 1024,
+    "greedy": true,
+    "chat_template_gsm8k": true,
+    "enable_thinking": false,
+    "dtype": "float16",
+    "batch_size_gen": 64,
+    "batch_size_ll": 16,
+    "limit": null
+  },
+  "task_versions": {
+    "gsm8k_cot": 3.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

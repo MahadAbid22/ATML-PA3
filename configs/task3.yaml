@@ -1,0 +1,35 @@
+# Task 3 - test-time compute (values from the assignment unless marked "choice")
+seed: 6304
+data_dir: data/supplied            # ATML-PA3-Data (not committed)
+datasets:
+  math: {folder: qwen25-math, kind: math}
+  mathvista: {folder: qwen25vl-mathvista, kind: mathvista}
+mathvista_meta: {repo: AI4Math/MathVista, file: data/testmini-00000-of-00001-725687bf7a18d64b.parquet, revision: 2b6ad69445fbb5695c9b165475e8decdbeb97747}
+
+split: {n_dev: 200, n_eval: 800}
+budgets: [1, 2, 4, 8, 16, 32]
+n_orders: 10
+bootstrap: 1000
+visconf_quantiles: [5, 95]
+
+adaptive:
+  check_points: [4, 8, 16]
+  tau: [0.5, 0.625, 0.75, 0.875, 1.0]
+  delta: [0.0, 0.1, 0.25, 0.5]
+  max_drop_pp: 1.0
+
+live:
+  model: Qwen/Qwen2.5-3B-Instruct
+  revision: aa8e72537993ba99e69dfaafa59ed015b17504d1
+  n_questions: 50
+  system: "You are a helpful assistant."
+  instruction: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
+  review: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
+  temperature: 0.7
+  top_p: 0.8
+  top_k: 20
+  repetition_penalty: 1.0
+  single_cap: 3072
+  parallel_cap: 1024
+  n_parallel: 3
+  refine_cap: 2048

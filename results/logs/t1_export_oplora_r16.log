@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:33,  9.25it/s]Loading weights:  57%|█████▋    | 177/311 [00:00<00:00, 998.54it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1086.45it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:49,  6.27it/s]Loading weights:  51%|█████     | 159/311 [00:00<00:00, 748.39it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 884.27it/s]
+[07:39:13] [oplora_r16] merge check: {'max_abs_diff_fp32_merged_vs_unmerged': 5.53131103515625e-05, 'max_abs_diff_fp16_merged_vs_fp32_unmerged': 0.05904531478881836, 'argmax_agreement_fp16_merged': 0.9886363744735718, 'logit_abs_scale': 2.643322229385376}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.54it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.54it/s]
+[07:39:14] [oplora_r16] exported to /workspace/pa3_outputs/task1/models/oplora_r16

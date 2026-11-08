@@ -1,0 +1,2 @@
+[01:39:11] VQA candidate pairs train {'other': 17375, 'yes/no': 44033, 'number': 10561} val {'yes/no': 20963, 'other': 8039, 'number': 4923}
+[01:39:27] task2 data: {"captions_train": 18000, "captions_dev": 96, "presence_pool": 6000, "counting_pool": 3000, "vqa_train": 1536, "grounding_dev": 24, "grounding_test": 64, "vqa_dev": 32, "vqa_test": 96}

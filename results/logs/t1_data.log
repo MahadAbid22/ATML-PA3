@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 7473/7473 [00:00<00:00, 672763.12 examples/s]
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1319/1319 [00:00<00:00, 490842.60 examples/s]
+[01:37:24] GSM8K test questions: 1319
+Generating train split:   0%|          | 0/395000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 395000/395000 [00:03<00:00, 114001.97 examples/s]Generating train split: 100%|██████████| 395000/395000 [00:03<00:00, 113269.24 examples/s]
+[01:37:30] MetaMathQA rows: 395000
+[01:37:44] data stats: {'n_selected': 40000, 'last_source_index': 40001, 'source_rows_scanned': 40002, 'excluded': {'empty': 0, 'gsm8k_test_match': 0, 'too_long': 2}, 'tokens_total': 9908423, 'response_tokens_total': 7100056, 'length_mean': 247.710575, 'length_p50': 219.0, 'length_p99': 681.0, 'length_max': 1941, 'example_prompt': '<|im_start|>user\n<question><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'}

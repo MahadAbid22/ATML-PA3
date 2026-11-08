@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:41,  7.54it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1433.69it/s]
+[11:21:01] grounding_test: correct 0.750, complementary 0.094, mismatched 0.328, none 0.375
+[11:21:12] vqa_test: correct 0.510, complementary 0.302, mismatched 0.324, none 0.312
+[11:21:12] task2 final evaluation written

@@ -36,7 +36,7 @@ All reported numbers come from one run on a single rented machine: NVIDIA RTX 40
 bash scripts/run_all.sh          # OPTIONAL=0 skips the optional 49-token Task 2 run
 ```
 
-The reported run did not include the optional 49-token Task 2 experiment, because of the GPU budget.
+The reported run includes the optional 49-token Task 2 experiment (`results/task2/tokens49/`).
 
 `run_all.sh` runs two lanes:
 

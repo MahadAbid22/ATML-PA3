@@ -1,0 +1,22 @@
+[02:08:10] [math] 100/1000 questions
+[02:08:11] [math] 200/1000 questions
+[02:08:12] [math] 300/1000 questions
+[02:08:13] [math] 400/1000 questions
+[02:08:13] [math] 500/1000 questions
+[02:08:14] [math] 600/1000 questions
+[02:08:15] [math] 700/1000 questions
+[02:08:16] [math] 800/1000 questions
+[02:08:17] [math] 900/1000 questions
+[02:08:17] [math] 1000/1000 questions
+[02:08:18] [math] eval N=32: oracle 0.914 | first_ans 0.643 self_consistency 0.738 best_logp 0.640 best_selfcert 0.706 rwc_selfcert 0.755 shortest 0.624
+[02:08:22] [mathvista] 100/1000 questions
+[02:08:26] [mathvista] 200/1000 questions
+[02:08:30] [mathvista] 300/1000 questions
+[02:08:33] [mathvista] 400/1000 questions
+[02:08:37] [mathvista] 500/1000 questions
+[02:08:41] [mathvista] 600/1000 questions
+[02:08:45] [mathvista] 700/1000 questions
+[02:08:49] [mathvista] 800/1000 questions
+[02:08:52] [mathvista] 900/1000 questions
+[02:08:56] [mathvista] 1000/1000 questions
+[02:08:57] [mathvista] eval N=32: oracle 0.904 | first_ans 0.545 self_consistency 0.638 best_logp 0.491 best_selfcert 0.557 rwc_selfcert 0.646 shortest 0.541 best_vision 0.542 rwc_vision 0.642 best_visconf 0.585 rwc_visconf 0.649 best_visconf_token 0.569 rwc_visconf_token 0.645

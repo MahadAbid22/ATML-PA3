@@ -1,0 +1,58 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   1%|          | 2/311 [00:00<00:18, 16.72it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1736.57it/s]
+[03:22:02] [lora_r4] trainable parameters: 2,523,136
+[03:22:06] [lora_r4] update 1/1250 loss 1.0284 lr 0.00e+00 gnorm 1.890 4.04s/update
+[03:23:35] [lora_r4] update 25/1250 loss 0.3601 lr 1.26e-04 gnorm 0.439 3.71s/update
+[03:25:06] [lora_r4] update 50/1250 loss 0.2804 lr 2.00e-04 gnorm 0.221 3.64s/update
+[03:26:38] [lora_r4] update 75/1250 loss 0.2703 lr 2.00e-04 gnorm 0.231 3.80s/update
+[03:28:09] [lora_r4] update 100/1250 loss 0.2705 lr 1.99e-04 gnorm 0.236 3.74s/update
+[03:29:41] [lora_r4] update 125/1250 loss 0.2947 lr 1.98e-04 gnorm 0.287 3.72s/update
+[03:31:14] [lora_r4] update 150/1250 loss 0.2603 lr 1.96e-04 gnorm 0.304 3.68s/update
+[03:32:46] [lora_r4] update 175/1250 loss 0.2255 lr 1.94e-04 gnorm 0.260 3.71s/update
+[03:34:18] [lora_r4] update 200/1250 loss 0.2198 lr 1.91e-04 gnorm 0.277 3.69s/update
+[03:35:51] [lora_r4] update 225/1250 loss 0.2634 lr 1.89e-04 gnorm 0.289 3.70s/update
+[03:37:23] [lora_r4] update 250/1250 loss 0.2606 lr 1.85e-04 gnorm 0.319 3.71s/update
+[03:38:56] [lora_r4] update 275/1250 loss 0.2496 lr 1.82e-04 gnorm 0.238 3.75s/update
+[03:40:29] [lora_r4] update 300/1250 loss 0.2253 lr 1.78e-04 gnorm 0.283 3.74s/update
+[03:41:13] [lora_r4] checkpoint 312: 0.03 GB
+[03:42:01] [lora_r4] update 325/1250 loss 0.2535 lr 1.74e-04 gnorm 0.290 3.72s/update
+[03:43:34] [lora_r4] update 350/1250 loss 0.2346 lr 1.69e-04 gnorm 0.269 3.72s/update
+[03:45:07] [lora_r4] update 375/1250 loss 0.1976 lr 1.64e-04 gnorm 0.264 3.71s/update
+[03:46:40] [lora_r4] update 400/1250 loss 0.2188 lr 1.59e-04 gnorm 0.289 3.76s/update
+[03:48:13] [lora_r4] update 425/1250 loss 0.2390 lr 1.54e-04 gnorm 0.297 3.71s/update
+[03:49:46] [lora_r4] update 450/1250 loss 0.2450 lr 1.48e-04 gnorm 0.301 3.71s/update
+[03:51:19] [lora_r4] update 475/1250 loss 0.1924 lr 1.43e-04 gnorm 0.243 3.70s/update
+[03:52:52] [lora_r4] update 500/1250 loss 0.2230 lr 1.37e-04 gnorm 0.281 3.72s/update
+[03:54:25] [lora_r4] update 525/1250 loss 0.2090 lr 1.31e-04 gnorm 0.257 3.75s/update
+[03:55:58] [lora_r4] update 550/1250 loss 0.2143 lr 1.24e-04 gnorm 0.279 3.68s/update
+[03:57:30] [lora_r4] update 575/1250 loss 0.2187 lr 1.18e-04 gnorm 0.316 3.71s/update
+[03:59:02] [lora_r4] update 600/1250 loss 0.2195 lr 1.12e-04 gnorm 0.289 3.67s/update
+[04:00:35] [lora_r4] update 625/1250 loss 0.2142 lr 1.05e-04 gnorm 0.252 3.78s/update
+[04:00:35] [lora_r4] checkpoint 625: 0.03 GB
+[04:02:07] [lora_r4] update 650/1250 loss 0.1937 lr 9.87e-05 gnorm 0.296 3.67s/update
+[04:03:40] [lora_r4] update 675/1250 loss 0.2254 lr 9.22e-05 gnorm 0.283 3.70s/update
+[04:05:13] [lora_r4] update 700/1250 loss 0.2242 lr 8.58e-05 gnorm 0.281 3.73s/update
+[04:06:44] [lora_r4] update 725/1250 loss 0.2058 lr 7.94e-05 gnorm 0.271 3.58s/update
+[04:08:14] [lora_r4] update 750/1250 loss 0.1680 lr 7.31e-05 gnorm 0.260 3.57s/update
+[04:09:44] [lora_r4] update 775/1250 loss 0.1966 lr 6.69e-05 gnorm 0.257 3.58s/update
+[04:11:14] [lora_r4] update 800/1250 loss 0.1926 lr 6.09e-05 gnorm 0.285 3.76s/update
+[04:12:43] [lora_r4] update 825/1250 loss 0.2392 lr 5.50e-05 gnorm 0.314 3.60s/update
+[04:14:14] [lora_r4] update 850/1250 loss 0.2152 lr 4.93e-05 gnorm 0.270 3.49s/update
+[04:15:44] [lora_r4] update 875/1250 loss 0.2029 lr 4.39e-05 gnorm 0.291 3.59s/update
+[04:17:16] [lora_r4] update 900/1250 loss 0.1950 lr 3.86e-05 gnorm 0.296 3.75s/update
+[04:18:47] [lora_r4] update 925/1250 loss 0.2038 lr 3.36e-05 gnorm 0.264 3.76s/update
+[04:19:31] [lora_r4] checkpoint 937: 0.03 GB
+[04:20:19] [lora_r4] update 950/1250 loss 0.2246 lr 2.89e-05 gnorm 0.318 3.61s/update
+[04:21:49] [lora_r4] update 975/1250 loss 0.2346 lr 2.45e-05 gnorm 0.321 3.57s/update
+[04:23:20] [lora_r4] update 1000/1250 loss 0.2299 lr 2.04e-05 gnorm 0.284 3.66s/update
+[04:24:51] [lora_r4] update 1025/1250 loss 0.2071 lr 1.67e-05 gnorm 0.273 3.58s/update
+[04:26:22] [lora_r4] update 1050/1250 loss 0.2440 lr 1.33e-05 gnorm 0.303 3.72s/update
+[04:27:56] [lora_r4] update 1075/1250 loss 0.1908 lr 1.02e-05 gnorm 0.305 3.71s/update
+[04:29:31] [lora_r4] update 1100/1250 loss 0.2283 lr 7.56e-06 gnorm 0.312 3.78s/update
+[04:31:03] [lora_r4] update 1125/1250 loss 0.2233 lr 5.29e-06 gnorm 0.291 3.73s/update
+[04:32:35] [lora_r4] update 1150/1250 loss 0.1816 lr 3.41e-06 gnorm 0.277 3.58s/update
+[04:34:07] [lora_r4] update 1175/1250 loss 0.1940 lr 1.93e-06 gnorm 0.280 3.81s/update
+[04:35:40] [lora_r4] update 1200/1250 loss 0.1920 lr 8.73e-07 gnorm 0.294 3.69s/update
+[04:37:13] [lora_r4] update 1225/1250 loss 0.2549 lr 2.27e-07 gnorm 0.304 3.81s/update
+[04:38:47] [lora_r4] update 1250/1250 loss 0.1929 lr 3.36e-10 gnorm 0.287 3.71s/update
+[04:38:47] [lora_r4] checkpoint 1250: 0.03 GB
+[04:38:47] [lora_r4] done: 76.7 min, peak 4.70 GB

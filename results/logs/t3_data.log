@@ -1,0 +1,55 @@
+[01:41:21] [math] alignment checks: {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0}
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as parsing_timeout is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+Timeout is disabled as timeout_seconds is None or <= 0, you must provide                         the logic for timeout interuption yourself to prevent code getting stuck.
+[01:48:59] [math] alignment checks: {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0}
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+=== rerun with crash-safe grouping Sun Nov  8 02:02:08 UTC 2026
+[02:02:09] [math] alignment checks: {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0}
+[02:02:10] grouped 100/1000 questions
+[02:02:11] grouped 200/1000 questions
+[02:02:13] grouped 300/1000 questions
+[02:02:14] grouped 400/1000 questions
+[02:02:16] grouped 500/1000 questions
+[02:02:17] grouped 600/1000 questions
+[02:02:18] grouped 700/1000 questions
+[02:02:19] grouped 800/1000 questions
+[02:02:22] grouped 900/1000 questions
+[02:06:47] no progress for 240s; 1 task(s) lost, retrying them in isolation
+[02:08:02] question 876: isolated retry failed (exit code -9); string-equality fallback
+[02:08:02] [math] {'questions': 1000, 'rollouts': 32000, 'retained_tokens': 20742094, 'capped_rollouts': 523, 'no_answer_rollouts': 521, 'rollout_accuracy': 0.66315625, 'oracle_at_32': 0.919, 'mean_distinct_groups_at_32': 5.654, 'checks': {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0, 'string_fallback_questions': ['test:4928']}}
+[02:08:03] [mathvista] alignment checks: {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0, 'att_len_eq_tokens': True, 'att_counts_are_0_to_N_minus_1': True}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[02:08:06] grouped 100/1000 questions
+[02:08:06] grouped 200/1000 questions
+[02:08:06] grouped 300/1000 questions
+[02:08:06] grouped 400/1000 questions
+[02:08:06] grouped 500/1000 questions
+[02:08:07] grouped 600/1000 questions
+[02:08:07] grouped 700/1000 questions
+[02:08:07] grouped 800/1000 questions
+[02:08:07] grouped 900/1000 questions
+[02:08:07] grouped 1000/1000 questions
+[02:08:08] [mathvista] {'questions': 1000, 'rollouts': 32000, 'retained_tokens': 8961703, 'capped_rollouts': 487, 'no_answer_rollouts': 3032, 'rollout_accuracy': 0.54465625, 'oracle_at_32': 0.903, 'mean_distinct_groups_at_32': 4.456, 'checks': {'rows': 32000, 'logp_len_eq_tokens': True, 'kl_len_eq_tokens': True, 'scalar_len_eq_tokens': True, 'zero_length_rollouts': 0, 'att_len_eq_tokens': True, 'att_counts_are_0_to_N_minus_1': True, 'string_fallback_questions': []}}

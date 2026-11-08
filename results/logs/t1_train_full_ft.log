@@ -1,0 +1,59 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<01:14,  4.18it/s]Loading weights:  69%|██████▉   | 215/311 [00:00<00:00, 801.52it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 786.10it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[01:38:03] [full_ft] trainable parameters: 596,049,920
+[01:38:07] [full_ft] update 1/1250 loss 1.0284 lr 0.00e+00 gnorm 33.288 2.83s/update
+[01:39:06] [full_ft] update 25/1250 loss 0.2369 lr 1.26e-05 gnorm 2.431 2.47s/update
+[01:40:09] [full_ft] update 50/1250 loss 0.2433 lr 2.00e-05 gnorm 1.971 2.49s/update
+[01:41:12] [full_ft] update 75/1250 loss 0.2594 lr 2.00e-05 gnorm 2.204 2.47s/update
+[01:42:17] [full_ft] update 100/1250 loss 0.2617 lr 1.99e-05 gnorm 2.033 2.45s/update
+[01:43:18] [full_ft] update 125/1250 loss 0.2791 lr 1.98e-05 gnorm 2.072 2.31s/update
+[01:44:19] [full_ft] update 150/1250 loss 0.2416 lr 1.96e-05 gnorm 1.916 2.30s/update
+[01:45:19] [full_ft] update 175/1250 loss 0.2167 lr 1.94e-05 gnorm 1.872 2.35s/update
+[01:46:20] [full_ft] update 200/1250 loss 0.2183 lr 1.91e-05 gnorm 1.899 2.42s/update
+[01:47:20] [full_ft] update 225/1250 loss 0.2574 lr 1.89e-05 gnorm 1.944 2.49s/update
+[01:48:21] [full_ft] update 250/1250 loss 0.2578 lr 1.85e-05 gnorm 2.064 2.57s/update
+[01:49:26] [full_ft] update 275/1250 loss 0.2507 lr 1.82e-05 gnorm 1.822 2.66s/update
+[01:50:29] [full_ft] update 300/1250 loss 0.2258 lr 1.78e-05 gnorm 1.982 2.70s/update
+[01:51:07] [full_ft] checkpoint 312: 6.66 GB
+[01:51:39] [full_ft] update 325/1250 loss 0.2565 lr 1.74e-05 gnorm 2.030 2.50s/update
+[01:52:41] [full_ft] update 350/1250 loss 0.2375 lr 1.69e-05 gnorm 1.896 2.41s/update
+[01:53:43] [full_ft] update 375/1250 loss 0.2042 lr 1.64e-05 gnorm 1.703 2.41s/update
+[01:54:45] [full_ft] update 400/1250 loss 0.2098 lr 1.59e-05 gnorm 1.741 2.42s/update
+[01:55:47] [full_ft] update 425/1250 loss 0.2388 lr 1.54e-05 gnorm 1.923 2.41s/update
+[01:56:48] [full_ft] update 450/1250 loss 0.2315 lr 1.48e-05 gnorm 1.818 2.40s/update
+[01:57:50] [full_ft] update 475/1250 loss 0.1780 lr 1.43e-05 gnorm 1.493 2.39s/update
+[01:58:52] [full_ft] update 500/1250 loss 0.2127 lr 1.37e-05 gnorm 1.691 2.42s/update
+[01:59:54] [full_ft] update 525/1250 loss 0.2123 lr 1.31e-05 gnorm 1.619 2.40s/update
+[02:00:56] [full_ft] update 550/1250 loss 0.2092 lr 1.24e-05 gnorm 1.832 2.37s/update
+[02:01:57] [full_ft] update 575/1250 loss 0.2089 lr 1.18e-05 gnorm 1.720 2.50s/update
+[02:03:05] [full_ft] update 600/1250 loss 0.1967 lr 1.12e-05 gnorm 1.552 2.51s/update
+[02:04:07] [full_ft] update 625/1250 loss 0.2046 lr 1.05e-05 gnorm 1.451 2.61s/update
+[02:04:16] [full_ft] checkpoint 625: 6.66 GB
+[02:05:15] [full_ft] update 650/1250 loss 0.1734 lr 9.87e-06 gnorm 1.600 2.40s/update
+[02:06:17] [full_ft] update 675/1250 loss 0.2129 lr 9.22e-06 gnorm 1.605 2.48s/update
+[02:07:19] [full_ft] update 700/1250 loss 0.2027 lr 8.58e-06 gnorm 1.564 2.53s/update
+[02:08:23] [full_ft] update 725/1250 loss 0.1854 lr 7.94e-06 gnorm 1.546 2.44s/update
+[02:09:25] [full_ft] update 750/1250 loss 0.1546 lr 7.31e-06 gnorm 1.357 2.40s/update
+[02:10:27] [full_ft] update 775/1250 loss 0.1788 lr 6.69e-06 gnorm 1.560 2.40s/update
+[02:11:29] [full_ft] update 800/1250 loss 0.1709 lr 6.09e-06 gnorm 1.474 2.36s/update
+[02:12:30] [full_ft] update 825/1250 loss 0.2278 lr 5.50e-06 gnorm 1.837 2.38s/update
+[02:13:32] [full_ft] update 850/1250 loss 0.1940 lr 4.93e-06 gnorm 1.548 2.41s/update
+[02:14:33] [full_ft] update 875/1250 loss 0.1804 lr 4.39e-06 gnorm 1.580 2.47s/update
+[02:15:35] [full_ft] update 900/1250 loss 0.1670 lr 3.86e-06 gnorm 1.440 2.48s/update
+[02:16:36] [full_ft] update 925/1250 loss 0.1844 lr 3.36e-06 gnorm 1.578 2.49s/update
+[02:17:11] [full_ft] checkpoint 937: 6.66 GB
+[02:17:42] [full_ft] update 950/1250 loss 0.1897 lr 2.89e-06 gnorm 1.760 2.40s/update
+[02:18:43] [full_ft] update 975/1250 loss 0.2076 lr 2.45e-06 gnorm 1.721 2.43s/update
+[02:19:43] [full_ft] update 1000/1250 loss 0.2112 lr 2.04e-06 gnorm 1.638 2.42s/update
+[02:20:43] [full_ft] update 1025/1250 loss 0.1734 lr 1.67e-06 gnorm 1.430 2.38s/update
+[02:21:44] [full_ft] update 1050/1250 loss 0.2165 lr 1.33e-06 gnorm 1.826 2.41s/update
+[02:22:45] [full_ft] update 1075/1250 loss 0.1674 lr 1.02e-06 gnorm 1.758 2.40s/update
+[02:23:46] [full_ft] update 1100/1250 loss 0.1931 lr 7.56e-07 gnorm 1.674 2.31s/update
+[02:24:47] [full_ft] update 1125/1250 loss 0.1924 lr 5.29e-07 gnorm 1.532 2.45s/update
+[02:25:49] [full_ft] update 1150/1250 loss 0.1637 lr 3.41e-07 gnorm 1.541 2.48s/update
+[02:26:50] [full_ft] update 1175/1250 loss 0.1671 lr 1.93e-07 gnorm 1.457 2.48s/update
+[02:27:53] [full_ft] update 1200/1250 loss 0.1670 lr 8.73e-08 gnorm 1.577 2.50s/update
+[02:28:54] [full_ft] update 1225/1250 loss 0.2197 lr 2.27e-08 gnorm 1.708 2.49s/update
+[02:29:56] [full_ft] update 1250/1250 loss 0.1652 lr 3.36e-11 gnorm 1.600 2.48s/update
+[02:30:02] [full_ft] checkpoint 1250: 6.66 GB
+[02:30:05] [full_ft] done: 51.5 min, peak 13.26 GB

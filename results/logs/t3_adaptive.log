@@ -1,0 +1,4 @@
+[02:09:09] [math] agreement: selected tau=0.625 delta=None -> eval acc 0.736 cost 10140 (fixed32 0.738)
+[02:09:09] [math] quality_aware: selected tau=0.5 delta=0.0 -> eval acc 0.732 cost 7663 (fixed32 0.738)
+[02:09:24] [mathvista] agreement: selected tau=0.5 delta=None -> eval acc 0.630 cost 2881 (fixed32 0.638)
+[02:09:24] [mathvista] quality_aware: selected tau=0.5 delta=0.0 -> eval acc 0.633 cost 3255 (fixed32 0.638)

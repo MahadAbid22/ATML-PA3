@@ -1,0 +1,101 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  46%|████▌     | 142/311 [00:00<00:00, 1410.87it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 2045.88it/s]
+[09:40:53] stage 1 caption_alignment: 2250 updates, trainable 1,837,056
+[09:40:53] update 1/4500 stage 1 loss 5.4936 gnorm nan
+[09:40:55] sanity caption_alignment: {'connector_grad_norm': 232.62205505371094, 'lora_grad_norm': None, 'frozen_backbone_has_grad': False, 'backbone_trainable_params': 0, 'feature_shape': [8, 196, 768]}
+[09:41:05] update 50/4500 stage 1 loss 3.5468 gnorm 7.10
+[09:41:18] update 100/4500 stage 1 loss 3.6384 gnorm 2.48
+[09:41:30] update 150/4500 stage 1 loss 3.3189 gnorm 1.13
+[09:41:42] update 200/4500 stage 1 loss 2.8568 gnorm 1.31
+[09:41:54] update 250/4500 stage 1 loss 2.7106 gnorm 0.79
+[09:42:06] update 300/4500 stage 1 loss 2.4349 gnorm 1.46
+[09:42:18] update 350/4500 stage 1 loss 2.9534 gnorm 1.03
+[09:42:30] update 400/4500 stage 1 loss 2.5607 gnorm 0.71
+[09:42:42] update 450/4500 stage 1 loss 2.6813 gnorm 0.84
+[09:42:53] update 500/4500 stage 1 loss 2.9114 gnorm 0.75
+[09:43:08] update 550/4500 stage 1 loss 2.8216 gnorm 0.74
+[09:43:20] update 600/4500 stage 1 loss 2.5367 gnorm 0.74
+[09:43:32] update 650/4500 stage 1 loss 2.7987 gnorm 0.77
+[09:43:44] update 700/4500 stage 1 loss 2.5708 gnorm 0.66
+[09:43:56] update 750/4500 stage 1 loss 2.6829 gnorm 0.76
+[09:44:08] update 800/4500 stage 1 loss 2.3076 gnorm 0.66
+[09:44:20] update 850/4500 stage 1 loss 2.8798 gnorm 0.69
+[09:44:32] update 900/4500 stage 1 loss 2.2152 gnorm 0.66
+[09:44:43] update 950/4500 stage 1 loss 2.3284 gnorm 0.59
+[09:44:55] update 1000/4500 stage 1 loss 2.6511 gnorm 0.69
+[09:45:10] update 1050/4500 stage 1 loss 2.6849 gnorm 0.64
+[09:45:22] update 1100/4500 stage 1 loss 2.3796 gnorm 0.72
+[09:45:34] update 1150/4500 stage 1 loss 2.0990 gnorm 0.63
+[09:45:46] update 1200/4500 stage 1 loss 2.4957 gnorm 0.61
+[09:45:58] update 1250/4500 stage 1 loss 2.4362 gnorm 0.66
+[09:46:10] update 1300/4500 stage 1 loss 2.2599 gnorm 0.76
+[09:46:22] update 1350/4500 stage 1 loss 1.9867 gnorm 0.68
+[09:46:34] update 1400/4500 stage 1 loss 2.5194 gnorm 0.78
+[09:46:46] update 1450/4500 stage 1 loss 2.3690 gnorm 0.72
+[09:46:58] update 1500/4500 stage 1 loss 2.0968 gnorm 0.74
+[09:47:12] update 1550/4500 stage 1 loss 2.4272 gnorm 0.75
+[09:47:24] update 1600/4500 stage 1 loss 2.4530 gnorm 0.75
+[09:47:36] update 1650/4500 stage 1 loss 2.3278 gnorm 0.75
+[09:47:48] update 1700/4500 stage 1 loss 2.4584 gnorm 0.86
+[09:48:00] update 1750/4500 stage 1 loss 2.3765 gnorm 0.81
+[09:48:12] update 1800/4500 stage 1 loss 2.2876 gnorm 0.77
+[09:48:24] update 1850/4500 stage 1 loss 2.3292 gnorm 0.78
+[09:48:36] update 1900/4500 stage 1 loss 2.2534 gnorm 0.73
+[09:48:48] update 1950/4500 stage 1 loss 2.2106 gnorm 0.78
+[09:49:00] update 2000/4500 stage 1 loss 2.4437 gnorm 0.89
+[09:49:14] update 2050/4500 stage 1 loss 2.2357 gnorm 0.83
+[09:49:26] update 2100/4500 stage 1 loss 2.2959 gnorm 0.81
+[09:49:38] update 2150/4500 stage 1 loss 2.4237 gnorm 0.90
+[09:49:50] update 2200/4500 stage 1 loss 2.3639 gnorm 0.77
+[09:50:02] update 2250/4500 stage 1 loss 2.0643 gnorm 0.70
+[09:50:04] stage 2 visual_instruction: 1500 updates, trainable 6,424,576
+[09:50:04] sanity visual_instruction: {'connector_grad_norm': 6.678900718688965, 'lora_grad_norm': 53.02513122558594, 'frozen_backbone_has_grad': False, 'backbone_trainable_params': 0, 'feature_shape': [8, 196, 768]}
+[09:50:04] update 2251/4500 stage 2 loss 2.9306 gnorm 53.44
+[09:50:23] update 2300/4500 stage 2 loss 0.5438 gnorm 8.44
+[09:50:42] update 2350/4500 stage 2 loss 0.5099 gnorm 5.11
+[09:51:01] update 2400/4500 stage 2 loss 0.7238 gnorm 5.25
+[09:51:20] update 2450/4500 stage 2 loss 1.1418 gnorm 3.29
+[09:51:40] update 2500/4500 stage 2 loss 0.8953 gnorm 3.13
+[09:52:02] update 2550/4500 stage 2 loss 1.1791 gnorm 3.22
+[09:52:21] update 2600/4500 stage 2 loss 0.4018 gnorm 1.98
+[09:52:39] update 2650/4500 stage 2 loss 0.7023 gnorm 2.50
+[09:52:57] update 2700/4500 stage 2 loss 0.7424 gnorm 5.92
+[09:53:16] update 2750/4500 stage 2 loss 1.0478 gnorm 5.85
+[09:53:34] update 2800/4500 stage 2 loss 0.3440 gnorm 4.40
+[09:53:53] update 2850/4500 stage 2 loss 0.9969 gnorm 3.21
+[09:54:11] update 2900/4500 stage 2 loss 0.1203 gnorm 2.93
+[09:54:31] update 2950/4500 stage 2 loss 1.4888 gnorm 2.90
+[09:54:50] update 3000/4500 stage 2 loss 1.1289 gnorm 5.90
+[09:55:12] update 3050/4500 stage 2 loss 0.3576 gnorm 4.36
+[09:55:31] update 3100/4500 stage 2 loss 0.9331 gnorm 3.38
+[09:55:50] update 3150/4500 stage 2 loss 0.5726 gnorm 4.84
+[09:56:09] update 3200/4500 stage 2 loss 0.3753 gnorm 4.76
+[09:56:28] update 3250/4500 stage 2 loss 0.1342 gnorm 5.65
+[09:56:47] update 3300/4500 stage 2 loss 0.1307 gnorm 4.27
+[09:57:06] update 3350/4500 stage 2 loss 0.1634 gnorm 5.04
+[09:57:25] update 3400/4500 stage 2 loss 0.4739 gnorm 1.42
+[09:57:44] update 3450/4500 stage 2 loss 0.2325 gnorm 4.65
+[09:58:03] update 3500/4500 stage 2 loss 0.8295 gnorm 2.23
+[09:58:25] update 3550/4500 stage 2 loss 0.4321 gnorm 5.72
+[09:58:44] update 3600/4500 stage 2 loss 0.6257 gnorm 1.95
+[09:59:02] update 3650/4500 stage 2 loss 0.4327 gnorm 6.00
+[09:59:20] update 3700/4500 stage 2 loss 0.5060 gnorm 6.90
+[09:59:39] update 3750/4500 stage 2 loss 0.4698 gnorm 3.79
+[09:59:43] stage 3 natural_vqa: 750 updates, trainable 6,424,576
+[09:59:43] sanity natural_vqa: {'connector_grad_norm': 3.159266710281372, 'lora_grad_norm': 11.354960441589355, 'frozen_backbone_has_grad': False, 'backbone_trainable_params': 0, 'feature_shape': [8, 196, 768]}
+[09:59:43] update 3751/4500 stage 3 loss 0.9856 gnorm 11.79
+[10:00:01] update 3800/4500 stage 3 loss 0.7228 gnorm 8.37
+[10:00:20] update 3850/4500 stage 3 loss 0.9987 gnorm 6.98
+[10:00:39] update 3900/4500 stage 3 loss 0.3526 gnorm 3.29
+[10:00:57] update 3950/4500 stage 3 loss 0.6953 gnorm 5.04
+[10:01:16] update 4000/4500 stage 3 loss 0.3154 gnorm 5.27
+[10:01:38] update 4050/4500 stage 3 loss 1.0876 gnorm 19.60
+[10:01:57] update 4100/4500 stage 3 loss 0.4990 gnorm 4.85
+[10:02:15] update 4150/4500 stage 3 loss 0.8976 gnorm 5.19
+[10:02:34] update 4200/4500 stage 3 loss 0.6300 gnorm 6.54
+[10:02:52] update 4250/4500 stage 3 loss 0.2528 gnorm 5.32
+[10:03:11] update 4300/4500 stage 3 loss 0.4965 gnorm 5.64
+[10:03:30] update 4350/4500 stage 3 loss 0.3882 gnorm 4.96
+[10:03:49] update 4400/4500 stage 3 loss 0.6117 gnorm 5.47
+[10:04:09] update 4450/4500 stage 3 loss 1.0202 gnorm 4.36
+[10:04:28] update 4500/4500 stage 3 loss 0.4854 gnorm 5.63
+[10:04:32] task2 training done: 23.6 min

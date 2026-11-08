@@ -1,0 +1,98 @@
+{
+  "n_visual_tokens": 49,
+  "total_updates": 4500,
+  "example_presentations": 72000,
+  "train_seconds_by_stage": {
+    "caption_alignment": 568.7705522603355,
+    "visual_instruction": 586.7501410772093,
+    "natural_vqa": 301.49721342651173
+  },
+  "train_seconds_total": 1457.0179067640565,
+  "setup_seconds": 7.16570678493008,
+  "trainable_by_stage": {
+    "caption_alignment": {
+      "connector": 1837056,
+      "lora": 0,
+      "total": 1837056
+    },
+    "visual_instruction": {
+      "connector": 1837056,
+      "lora": 4587520,
+      "total": 6424576
+    },
+    "natural_vqa": {
+      "connector": 1837056,
+      "lora": 4587520,
+      "total": 6424576
+    }
+  },
+  "sanity_checks": {
+    "caption_alignment": {
+      "connector_grad_norm": 105.0531005859375,
+      "lora_grad_norm": null,
+      "frozen_backbone_has_grad": false,
+      "backbone_trainable_params": 0,
+      "feature_shape": [
+        8,
+        196,
+        768
+      ]
+    },
+    "visual_instruction": {
+      "connector_grad_norm": 3.92643141746521,
+      "lora_grad_norm": 36.07346725463867,
+      "frozen_backbone_has_grad": false,
+      "backbone_trainable_params": 0,
+      "feature_shape": [
+        8,
+        196,
+        768
+      ]
+    },
+    "natural_vqa": {
+      "connector_grad_norm": 2.396024703979492,
+      "lora_grad_norm": 5.822382926940918,
+      "frozen_backbone_has_grad": false,
+      "backbone_trainable_params": 0,
+      "feature_shape": [
+        8,
+        196,
+        768
+      ]
+    }
+  },
+  "mixture_by_stage": {
+    "caption_alignment": {
+      "caption": 36000
+    },
+    "visual_instruction": {
+      "draw_counting": 3074,
+      "draw_presence": 5946,
+      "draw_caption": 2980
+    },
+    "natural_vqa": {
+      "draw_vqa": 4197,
+      "draw_caption": 614,
+      "draw_counting": 592,
+      "draw_presence": 597
+    }
+  },
+  "gpu": {
+    "peak_allocated_gb": 2.078275203704834,
+    "peak_reserved_gb": 2.595703125
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

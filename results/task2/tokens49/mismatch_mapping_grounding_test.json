@@ -1,0 +1,1026 @@
+{
+  "grounding_test-0|a": {
+    "pair": "grounding_test-14",
+    "side": "a",
+    "image": [
+      "val2014",
+      286018
+    ]
+  },
+  "grounding_test-0|b": {
+    "pair": "grounding_test-14",
+    "side": "b",
+    "image": [
+      "val2014",
+      335733
+    ]
+  },
+  "grounding_test-1|a": {
+    "pair": "grounding_test-24",
+    "side": "b",
+    "image": [
+      "val2014",
+      182401
+    ]
+  },
+  "grounding_test-1|b": {
+    "pair": "grounding_test-24",
+    "side": "a",
+    "image": [
+      "val2014",
+      554579
+    ]
+  },
+  "grounding_test-2|a": {
+    "pair": "grounding_test-60",
+    "side": "a",
+    "image": [
+      "val2014",
+      302643
+    ]
+  },
+  "grounding_test-2|b": {
+    "pair": "grounding_test-60",
+    "side": "a",
+    "image": [
+      "val2014",
+      302643
+    ]
+  },
+  "grounding_test-3|a": {
+    "pair": "grounding_test-13",
+    "side": "a",
+    "image": [
+      "val2014",
+      126107
+    ]
+  },
+  "grounding_test-3|b": {
+    "pair": "grounding_test-13",
+    "side": "a",
+    "image": [
+      "val2014",
+      126107
+    ]
+  },
+  "grounding_test-4|a": {
+    "pair": "grounding_test-49",
+    "side": "b",
+    "image": [
+      "val2014",
+      539238
+    ]
+  },
+  "grounding_test-4|b": {
+    "pair": "grounding_test-49",
+    "side": "a",
+    "image": [
+      "val2014",
+      72656
+    ]
+  },
+  "grounding_test-5|a": {
+    "pair": "grounding_test-42",
+    "side": "a",
+    "image": [
+      "val2014",
+      128280
+    ]
+  },
+  "grounding_test-5|b": {
+    "pair": "grounding_test-42",
+    "side": "b",
+    "image": [
+      "val2014",
+      246197
+    ]
+  },
+  "grounding_test-6|a": {
+    "pair": "grounding_test-8",
+    "side": "a",
+    "image": [
+      "val2014",
+      410627
+    ]
+  },
+  "grounding_test-6|b": {
+    "pair": "grounding_test-8",
+    "side": "a",
+    "image": [
+      "val2014",
+      410627
+    ]
+  },
+  "grounding_test-7|a": {
+    "pair": "grounding_test-1",
+    "side": "a",
+    "image": [
+      "val2014",
+      262736
+    ]
+  },
+  "grounding_test-7|b": {
+    "pair": "grounding_test-1",
+    "side": "a",
+    "image": [
+      "val2014",
+      262736
+    ]
+  },
+  "grounding_test-8|a": {
+    "pair": "grounding_test-48",
+    "side": "b",
+    "image": [
+      "val2014",
+      274470
+    ]
+  },
+  "grounding_test-8|b": {
+    "pair": "grounding_test-48",
+    "side": "b",
+    "image": [
+      "val2014",
+      274470
+    ]
+  },
+  "grounding_test-9|a": {
+    "pair": "grounding_test-27",
+    "side": "a",
+    "image": [
+      "val2014",
+      527022
+    ]
+  },
+  "grounding_test-9|b": {
+    "pair": "grounding_test-27",
+    "side": "b",
+    "image": [
+      "val2014",
+      236162
+    ]
+  },
+  "grounding_test-10|a": {
+    "pair": "grounding_test-26",
+    "side": "b",
+    "image": [
+      "val2014",
+      82933
+    ]
+  },
+  "grounding_test-10|b": {
+    "pair": "grounding_test-26",
+    "side": "b",
+    "image": [
+      "val2014",
+      82933
+    ]
+  },
+  "grounding_test-11|a": {
+    "pair": "grounding_test-55",
+    "side": "b",
+    "image": [
+      "val2014",
+      132316
+    ]
+  },
+  "grounding_test-11|b": {
+    "pair": "grounding_test-55",
+    "side": "a",
+    "image": [
+      "val2014",
+      235244
+    ]
+  },
+  "grounding_test-12|a": {
+    "pair": "grounding_test-15",
+    "side": "b",
+    "image": [
+      "val2014",
+      377060
+    ]
+  },
+  "grounding_test-12|b": {
+    "pair": "grounding_test-15",
+    "side": "a",
+    "image": [
+      "val2014",
+      156740
+    ]
+  },
+  "grounding_test-13|a": {
+    "pair": "grounding_test-19",
+    "side": "a",
+    "image": [
+      "val2014",
+      242427
+    ]
+  },
+  "grounding_test-13|b": {
+    "pair": "grounding_test-19",
+    "side": "a",
+    "image": [
+      "val2014",
+      242427
+    ]
+  },
+  "grounding_test-14|a": {
+    "pair": "grounding_test-57",
+    "side": "b",
+    "image": [
+      "val2014",
+      118546
+    ]
+  },
+  "grounding_test-14|b": {
+    "pair": "grounding_test-57",
+    "side": "a",
+    "image": [
+      "val2014",
+      467157
+    ]
+  },
+  "grounding_test-15|a": {
+    "pair": "grounding_test-28",
+    "side": "a",
+    "image": [
+      "val2014",
+      215245
+    ]
+  },
+  "grounding_test-15|b": {
+    "pair": "grounding_test-28",
+    "side": "b",
+    "image": [
+      "val2014",
+      318814
+    ]
+  },
+  "grounding_test-16|a": {
+    "pair": "grounding_test-61",
+    "side": "b",
+    "image": [
+      "val2014",
+      567290
+    ]
+  },
+  "grounding_test-16|b": {
+    "pair": "grounding_test-61",
+    "side": "a",
+    "image": [
+      "val2014",
+      94940
+    ]
+  },
+  "grounding_test-17|a": {
+    "pair": "grounding_test-63",
+    "side": "b",
+    "image": [
+      "val2014",
+      281220
+    ]
+  },
+  "grounding_test-17|b": {
+    "pair": "grounding_test-63",
+    "side": "a",
+    "image": [
+      "val2014",
+      285683
+    ]
+  },
+  "grounding_test-18|a": {
+    "pair": "grounding_test-31",
+    "side": "a",
+    "image": [
+      "val2014",
+      498363
+    ]
+  },
+  "grounding_test-18|b": {
+    "pair": "grounding_test-31",
+    "side": "b",
+    "image": [
+      "val2014",
+      444496
+    ]
+  },
+  "grounding_test-19|a": {
+    "pair": "grounding_test-9",
+    "side": "a",
+    "image": [
+      "val2014",
+      396496
+    ]
+  },
+  "grounding_test-19|b": {
+    "pair": "grounding_test-9",
+    "side": "b",
+    "image": [
+      "val2014",
+      554711
+    ]
+  },
+  "grounding_test-20|a": {
+    "pair": "grounding_test-37",
+    "side": "b",
+    "image": [
+      "val2014",
+      339919
+    ]
+  },
+  "grounding_test-20|b": {
+    "pair": "grounding_test-37",
+    "side": "a",
+    "image": [
+      "val2014",
+      130875
+    ]
+  },
+  "grounding_test-21|a": {
+    "pair": "grounding_test-29",
+    "side": "b",
+    "image": [
+      "val2014",
+      476233
+    ]
+  },
+  "grounding_test-21|b": {
+    "pair": "grounding_test-29",
+    "side": "a",
+    "image": [
+      "val2014",
+      11525
+    ]
+  },
+  "grounding_test-22|a": {
+    "pair": "grounding_test-34",
+    "side": "a",
+    "image": [
+      "val2014",
+      334417
+    ]
+  },
+  "grounding_test-22|b": {
+    "pair": "grounding_test-34",
+    "side": "b",
+    "image": [
+      "val2014",
+      189504
+    ]
+  },
+  "grounding_test-23|a": {
+    "pair": "grounding_test-22",
+    "side": "a",
+    "image": [
+      "val2014",
+      436963
+    ]
+  },
+  "grounding_test-23|b": {
+    "pair": "grounding_test-22",
+    "side": "b",
+    "image": [
+      "val2014",
+      455767
+    ]
+  },
+  "grounding_test-24|a": {
+    "pair": "grounding_test-41",
+    "side": "b",
+    "image": [
+      "val2014",
+      226147
+    ]
+  },
+  "grounding_test-24|b": {
+    "pair": "grounding_test-41",
+    "side": "a",
+    "image": [
+      "val2014",
+      78404
+    ]
+  },
+  "grounding_test-25|a": {
+    "pair": "grounding_test-40",
+    "side": "b",
+    "image": [
+      "val2014",
+      554114
+    ]
+  },
+  "grounding_test-25|b": {
+    "pair": "grounding_test-40",
+    "side": "b",
+    "image": [
+      "val2014",
+      554114
+    ]
+  },
+  "grounding_test-26|a": {
+    "pair": "grounding_test-47",
+    "side": "b",
+    "image": [
+      "val2014",
+      60610
+    ]
+  },
+  "grounding_test-26|b": {
+    "pair": "grounding_test-47",
+    "side": "b",
+    "image": [
+      "val2014",
+      60610
+    ]
+  },
+  "grounding_test-27|a": {
+    "pair": "grounding_test-56",
+    "side": "b",
+    "image": [
+      "val2014",
+      258661
+    ]
+  },
+  "grounding_test-27|b": {
+    "pair": "grounding_test-56",
+    "side": "a",
+    "image": [
+      "val2014",
+      224138
+    ]
+  },
+  "grounding_test-28|a": {
+    "pair": "grounding_test-4",
+    "side": "b",
+    "image": [
+      "val2014",
+      224554
+    ]
+  },
+  "grounding_test-28|b": {
+    "pair": "grounding_test-4",
+    "side": "a",
+    "image": [
+      "val2014",
+      183416
+    ]
+  },
+  "grounding_test-29|a": {
+    "pair": "grounding_test-6",
+    "side": "b",
+    "image": [
+      "val2014",
+      261744
+    ]
+  },
+  "grounding_test-29|b": {
+    "pair": "grounding_test-6",
+    "side": "b",
+    "image": [
+      "val2014",
+      261744
+    ]
+  },
+  "grounding_test-30|a": {
+    "pair": "grounding_test-36",
+    "side": "b",
+    "image": [
+      "val2014",
+      281111
+    ]
+  },
+  "grounding_test-30|b": {
+    "pair": "grounding_test-36",
+    "side": "a",
+    "image": [
+      "val2014",
+      385508
+    ]
+  },
+  "grounding_test-31|a": {
+    "pair": "grounding_test-5",
+    "side": "a",
+    "image": [
+      "val2014",
+      521357
+    ]
+  },
+  "grounding_test-31|b": {
+    "pair": "grounding_test-5",
+    "side": "a",
+    "image": [
+      "val2014",
+      521357
+    ]
+  },
+  "grounding_test-32|a": {
+    "pair": "grounding_test-53",
+    "side": "b",
+    "image": [
+      "val2014",
+      271117
+    ]
+  },
+  "grounding_test-32|b": {
+    "pair": "grounding_test-53",
+    "side": "a",
+    "image": [
+      "val2014",
+      179522
+    ]
+  },
+  "grounding_test-33|a": {
+    "pair": "grounding_test-3",
+    "side": "a",
+    "image": [
+      "val2014",
+      142790
+    ]
+  },
+  "grounding_test-33|b": {
+    "pair": "grounding_test-3",
+    "side": "a",
+    "image": [
+      "val2014",
+      142790
+    ]
+  },
+  "grounding_test-34|a": {
+    "pair": "grounding_test-43",
+    "side": "a",
+    "image": [
+      "val2014",
+      487349
+    ]
+  },
+  "grounding_test-34|b": {
+    "pair": "grounding_test-43",
+    "side": "a",
+    "image": [
+      "val2014",
+      487349
+    ]
+  },
+  "grounding_test-35|a": {
+    "pair": "grounding_test-59",
+    "side": "a",
+    "image": [
+      "val2014",
+      425609
+    ]
+  },
+  "grounding_test-35|b": {
+    "pair": "grounding_test-59",
+    "side": "b",
+    "image": [
+      "val2014",
+      171942
+    ]
+  },
+  "grounding_test-36|a": {
+    "pair": "grounding_test-12",
+    "side": "a",
+    "image": [
+      "val2014",
+      200401
+    ]
+  },
+  "grounding_test-36|b": {
+    "pair": "grounding_test-12",
+    "side": "a",
+    "image": [
+      "val2014",
+      200401
+    ]
+  },
+  "grounding_test-37|a": {
+    "pair": "grounding_test-17",
+    "side": "b",
+    "image": [
+      "val2014",
+      428867
+    ]
+  },
+  "grounding_test-37|b": {
+    "pair": "grounding_test-17",
+    "side": "a",
+    "image": [
+      "val2014",
+      158227
+    ]
+  },
+  "grounding_test-38|a": {
+    "pair": "grounding_test-7",
+    "side": "b",
+    "image": [
+      "val2014",
+      348669
+    ]
+  },
+  "grounding_test-38|b": {
+    "pair": "grounding_test-7",
+    "side": "b",
+    "image": [
+      "val2014",
+      348669
+    ]
+  },
+  "grounding_test-39|a": {
+    "pair": "grounding_test-16",
+    "side": "a",
+    "image": [
+      "val2014",
+      252280
+    ]
+  },
+  "grounding_test-39|b": {
+    "pair": "grounding_test-16",
+    "side": "a",
+    "image": [
+      "val2014",
+      252280
+    ]
+  },
+  "grounding_test-40|a": {
+    "pair": "grounding_test-51",
+    "side": "b",
+    "image": [
+      "val2014",
+      39769
+    ]
+  },
+  "grounding_test-40|b": {
+    "pair": "grounding_test-51",
+    "side": "b",
+    "image": [
+      "val2014",
+      39769
+    ]
+  },
+  "grounding_test-41|a": {
+    "pair": "grounding_test-30",
+    "side": "b",
+    "image": [
+      "val2014",
+      403065
+    ]
+  },
+  "grounding_test-41|b": {
+    "pair": "grounding_test-30",
+    "side": "a",
+    "image": [
+      "val2014",
+      484066
+    ]
+  },
+  "grounding_test-42|a": {
+    "pair": "grounding_test-52",
+    "side": "a",
+    "image": [
+      "val2014",
+      117788
+    ]
+  },
+  "grounding_test-42|b": {
+    "pair": "grounding_test-52",
+    "side": "b",
+    "image": [
+      "val2014",
+      250619
+    ]
+  },
+  "grounding_test-43|a": {
+    "pair": "grounding_test-2",
+    "side": "a",
+    "image": [
+      "val2014",
+      532571
+    ]
+  },
+  "grounding_test-43|b": {
+    "pair": "grounding_test-2",
+    "side": "a",
+    "image": [
+      "val2014",
+      532571
+    ]
+  },
+  "grounding_test-44|a": {
+    "pair": "grounding_test-39",
+    "side": "a",
+    "image": [
+      "val2014",
+      251580
+    ]
+  },
+  "grounding_test-44|b": {
+    "pair": "grounding_test-39",
+    "side": "a",
+    "image": [
+      "val2014",
+      251580
+    ]
+  },
+  "grounding_test-45|a": {
+    "pair": "grounding_test-38",
+    "side": "a",
+    "image": [
+      "val2014",
+      229531
+    ]
+  },
+  "grounding_test-45|b": {
+    "pair": "grounding_test-38",
+    "side": "a",
+    "image": [
+      "val2014",
+      229531
+    ]
+  },
+  "grounding_test-46|a": {
+    "pair": "grounding_test-33",
+    "side": "a",
+    "image": [
+      "val2014",
+      132362
+    ]
+  },
+  "grounding_test-46|b": {
+    "pair": "grounding_test-33",
+    "side": "a",
+    "image": [
+      "val2014",
+      132362
+    ]
+  },
+  "grounding_test-47|a": {
+    "pair": "grounding_test-18",
+    "side": "b",
+    "image": [
+      "val2014",
+      352744
+    ]
+  },
+  "grounding_test-47|b": {
+    "pair": "grounding_test-18",
+    "side": "a",
+    "image": [
+      "val2014",
+      260510
+    ]
+  },
+  "grounding_test-48|a": {
+    "pair": "grounding_test-45",
+    "side": "a",
+    "image": [
+      "val2014",
+      270148
+    ]
+  },
+  "grounding_test-48|b": {
+    "pair": "grounding_test-45",
+    "side": "a",
+    "image": [
+      "val2014",
+      270148
+    ]
+  },
+  "grounding_test-49|a": {
+    "pair": "grounding_test-20",
+    "side": "a",
+    "image": [
+      "val2014",
+      396541
+    ]
+  },
+  "grounding_test-49|b": {
+    "pair": "grounding_test-20",
+    "side": "a",
+    "image": [
+      "val2014",
+      396541
+    ]
+  },
+  "grounding_test-50|a": {
+    "pair": "grounding_test-58",
+    "side": "b",
+    "image": [
+      "val2014",
+      20403
+    ]
+  },
+  "grounding_test-50|b": {
+    "pair": "grounding_test-58",
+    "side": "a",
+    "image": [
+      "val2014",
+      480015
+    ]
+  },
+  "grounding_test-51|a": {
+    "pair": "grounding_test-54",
+    "side": "a",
+    "image": [
+      "val2014",
+      198796
+    ]
+  },
+  "grounding_test-51|b": {
+    "pair": "grounding_test-54",
+    "side": "a",
+    "image": [
+      "val2014",
+      198796
+    ]
+  },
+  "grounding_test-52|a": {
+    "pair": "grounding_test-25",
+    "side": "b",
+    "image": [
+      "val2014",
+      467990
+    ]
+  },
+  "grounding_test-52|b": {
+    "pair": "grounding_test-25",
+    "side": "a",
+    "image": [
+      "val2014",
+      236985
+    ]
+  },
+  "grounding_test-53|a": {
+    "pair": "grounding_test-23",
+    "side": "a",
+    "image": [
+      "val2014",
+      521613
+    ]
+  },
+  "grounding_test-53|b": {
+    "pair": "grounding_test-23",
+    "side": "b",
+    "image": [
+      "val2014",
+      496102
+    ]
+  },
+  "grounding_test-54|a": {
+    "pair": "grounding_test-21",
+    "side": "a",
+    "image": [
+      "val2014",
+      492079
+    ]
+  },
+  "grounding_test-54|b": {
+    "pair": "grounding_test-21",
+    "side": "b",
+    "image": [
+      "val2014",
+      519635
+    ]
+  },
+  "grounding_test-55|a": {
+    "pair": "grounding_test-62",
+    "side": "b",
+    "image": [
+      "val2014",
+      394009
+    ]
+  },
+  "grounding_test-55|b": {
+    "pair": "grounding_test-62",
+    "side": "b",
+    "image": [
+      "val2014",
+      394009
+    ]
+  },
+  "grounding_test-56|a": {
+    "pair": "grounding_test-10",
+    "side": "b",
+    "image": [
+      "val2014",
+      342260
+    ]
+  },
+  "grounding_test-56|b": {
+    "pair": "grounding_test-10",
+    "side": "a",
+    "image": [
+      "val2014",
+      350133
+    ]
+  },
+  "grounding_test-57|a": {
+    "pair": "grounding_test-35",
+    "side": "a",
+    "image": [
+      "val2014",
+      151589
+    ]
+  },
+  "grounding_test-57|b": {
+    "pair": "grounding_test-35",
+    "side": "a",
+    "image": [
+      "val2014",
+      151589
+    ]
+  },
+  "grounding_test-58|a": {
+    "pair": "grounding_test-11",
+    "side": "a",
+    "image": [
+      "val2014",
+      505849
+    ]
+  },
+  "grounding_test-58|b": {
+    "pair": "grounding_test-11",
+    "side": "b",
+    "image": [
+      "val2014",
+      246252
+    ]
+  },
+  "grounding_test-59|a": {
+    "pair": "grounding_test-44",
+    "side": "a",
+    "image": [
+      "val2014",
+      405195
+    ]
+  },
+  "grounding_test-59|b": {
+    "pair": "grounding_test-44",
+    "side": "b",
+    "image": [
+      "val2014",
+      342831
+    ]
+  },
+  "grounding_test-60|a": {
+    "pair": "grounding_test-46",
+    "side": "b",
+    "image": [
+      "val2014",
+      158005
+    ]
+  },
+  "grounding_test-60|b": {
+    "pair": "grounding_test-46",
+    "side": "b",
+    "image": [
+      "val2014",
+      158005
+    ]
+  },
+  "grounding_test-61|a": {
+    "pair": "grounding_test-32",
+    "side": "a",
+    "image": [
+      "val2014",
+      447592
+    ]
+  },
+  "grounding_test-61|b": {
+    "pair": "grounding_test-32",
+    "side": "b",
+    "image": [
+      "val2014",
+      546932
+    ]
+  },
+  "grounding_test-62|a": {
+    "pair": "grounding_test-0",
+    "side": "a",
+    "image": [
+      "val2014",
+      119469
+    ]
+  },
+  "grounding_test-62|b": {
+    "pair": "grounding_test-0",
+    "side": "b",
+    "image": [
+      "val2014",
+      236714
+    ]
+  },
+  "grounding_test-63|a": {
+    "pair": "grounding_test-50",
+    "side": "b",
+    "image": [
+      "val2014",
+      78032
+    ]
+  },
+  "grounding_test-63|b": {
+    "pair": "grounding_test-50",
+    "side": "b",
+    "image": [
+      "val2014",
+      78032
+    ]
+  }
+}

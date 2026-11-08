@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:50,  6.10it/s]Loading weights:  85%|████████▌ | 265/311 [00:00<00:00, 1229.07it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1066.86it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<01:05,  4.71it/s]Loading weights:  92%|█████████▏| 287/311 [00:00<00:00, 1150.68it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 952.57it/s] 
+[04:38:53] [lora_r4] merge check: {'max_abs_diff_fp32_merged_vs_unmerged': 7.05718994140625e-05, 'max_abs_diff_fp16_merged_vs_fp32_unmerged': 0.10336017608642578, 'argmax_agreement_fp16_merged': 0.9886363744735718, 'logit_abs_scale': 2.6387999057769775}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.51it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.51it/s]
+[04:38:54] [lora_r4] exported to /workspace/pa3_outputs/task1/models/lora_r4

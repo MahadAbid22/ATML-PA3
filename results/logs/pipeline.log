@@ -1,0 +1,126 @@
+[2026-11-08 01:37:13] pipeline start on NVIDIA GeForce RTX 4090
+[2026-11-08 01:37:14] START t2_annotations (attempt 1)
+[2026-11-08 01:37:19] START t1_data (attempt 1)
+[2026-11-08 01:37:22] DONE  t2_annotations
+[2026-11-08 01:37:22] START t2_data (attempt 1)
+[2026-11-08 01:37:45] DONE  t1_data
+[2026-11-08 01:37:45] START t1_probes (attempt 1)
+[2026-11-08 01:37:49] DONE  t1_probes
+[2026-11-08 01:37:49] START t1_train_full_ft (attempt 1)
+[2026-11-08 01:39:28] DONE  t2_data
+[2026-11-08 01:39:28] START t2_images (attempt 1)
+[2026-11-08 01:41:19] DONE  t2_images
+[2026-11-08 01:41:19] START t3_data (attempt 1)
+[2026-11-08 01:48:58] FAIL  t3_data (see results/logs/t3_data.log)
+[2026-11-08 01:48:58] START t3_data (attempt 2)
+[2026-11-08 02:01:41] FAIL  t3_data (see results/logs/t3_data.log)
+[2026-11-08 02:02:08] START t3_data (rerun)
+[2026-11-08 02:08:08] DONE  t3_data
+[2026-11-08 02:08:08] START t3_selection (rerun)
+[2026-11-08 02:08:57] DONE  t3_selection
+[2026-11-08 02:08:57] START t3_signals (rerun)
+[2026-11-08 02:09:04] DONE  t3_signals
+[2026-11-08 02:09:04] START t3_adaptive (rerun)
+[2026-11-08 02:09:24] DONE  t3_adaptive
+[2026-11-08 02:30:07] DONE  t1_train_full_ft
+[2026-11-08 02:30:07] START t1_export_full_ft_mid (attempt 1)
+[2026-11-08 02:30:19] DONE  t1_export_full_ft_mid
+[2026-11-08 02:30:19] START t1_export_full_ft (attempt 1)
+[2026-11-08 02:30:26] DONE  t1_export_full_ft
+[2026-11-08 02:30:26] START t1_cleanup_full_ft (attempt 1)
+[2026-11-08 02:30:27] DONE  t1_cleanup_full_ft
+[2026-11-08 02:30:27] START t1_train_l2sp (attempt 1)
+[2026-11-08 03:21:49] DONE  t1_train_l2sp
+[2026-11-08 03:21:49] START t1_export_l2sp (attempt 1)
+[2026-11-08 03:21:56] DONE  t1_export_l2sp
+[2026-11-08 03:21:56] START t1_cleanup_l2sp (attempt 1)
+[2026-11-08 03:21:57] DONE  t1_cleanup_l2sp
+[2026-11-08 03:21:57] START t1_train_lora_r4 (attempt 1)
+[2026-11-08 03:24:23] SKIP  optional 49-token Task 2 run (budget)
+[2026-11-08 04:38:48] DONE  t1_train_lora_r4
+[2026-11-08 04:38:48] START t1_export_lora_r4 (attempt 1)
+[2026-11-08 04:38:54] DONE  t1_export_lora_r4
+[2026-11-08 04:38:54] START t1_cleanup_lora_r4 (attempt 1)
+[2026-11-08 04:38:56] DONE  t1_cleanup_lora_r4
+[2026-11-08 04:38:56] START t1_train_lora_r16 (attempt 1)
+[2026-11-08 05:55:53] DONE  t1_train_lora_r16
+[2026-11-08 05:55:53] START t1_export_lora_r16 (attempt 1)
+[2026-11-08 05:56:00] DONE  t1_export_lora_r16
+[2026-11-08 05:56:00] START t1_cleanup_lora_r16 (attempt 1)
+[2026-11-08 05:56:02] DONE  t1_cleanup_lora_r16
+[2026-11-08 05:56:02] START t1_train_oplora_r16 (attempt 1)
+[2026-11-08 07:39:07] DONE  t1_train_oplora_r16
+[2026-11-08 07:39:07] START t1_export_oplora_r16 (attempt 1)
+[2026-11-08 07:39:14] DONE  t1_export_oplora_r16
+[2026-11-08 07:39:14] START t1_cleanup_oplora_r16 (attempt 1)
+[2026-11-08 07:39:15] DONE  t1_cleanup_oplora_r16
+[2026-11-08 07:39:15] START t1_eval_baseline (attempt 1)
+[2026-11-08 07:49:02] FAIL  t1_eval_baseline (see results/logs/t1_eval_baseline.log)
+[2026-11-08 07:49:02] START t1_eval_baseline (attempt 2)
+[2026-11-08 07:51:02] RESTART pipeline (eval batch fix)
+[2026-11-08 07:51:02] pipeline start on NVIDIA GeForce RTX 4090
+[2026-11-08 07:51:05] START t1_eval_baseline (attempt 1)
+[2026-11-08 08:02:18] DONE  t1_eval_baseline
+[2026-11-08 08:02:18] START t1_qual_baseline (attempt 1)
+[2026-11-08 08:02:39] DONE  t1_qual_baseline
+[2026-11-08 08:02:39] START t1_eval_full_ft_mid (attempt 1)
+[2026-11-08 08:11:43] FAIL  t1_eval_full_ft_mid (see results/logs/t1_eval_full_ft_mid.log)
+[2026-11-08 08:11:43] START t1_eval_full_ft_mid (attempt 2)
+[2026-11-08 08:20:48] FAIL  t1_eval_full_ft_mid (see results/logs/t1_eval_full_ft_mid.log)
+[2026-11-08 08:20:48] START t1_qual_full_ft_mid (attempt 1)
+[2026-11-08 08:21:21] DONE  t1_qual_full_ft_mid
+[2026-11-08 08:21:21] START t1_eval_full_ft (attempt 1)
+[2026-11-08 08:28:07] FAIL  t1_eval_full_ft (see results/logs/t1_eval_full_ft.log)
+[2026-11-08 08:28:07] START t1_eval_full_ft (attempt 2)
+[2026-11-08 08:34:50] FAIL  t1_eval_full_ft (see results/logs/t1_eval_full_ft.log)
+[2026-11-08 08:34:50] START t1_qual_full_ft (attempt 1)
+[2026-11-08 08:35:21] DONE  t1_qual_full_ft
+[2026-11-08 08:35:21] START t1_eval_l2sp (attempt 1)
+[2026-11-08 08:44:49] DONE  t1_eval_l2sp
+[2026-11-08 08:44:49] START t1_qual_l2sp (attempt 1)
+[2026-11-08 08:45:19] DONE  t1_qual_l2sp
+[2026-11-08 08:45:19] START t1_eval_lora_r4 (attempt 1)
+[2026-11-08 08:57:03] DONE  t1_eval_lora_r4
+[2026-11-08 08:57:03] START t1_qual_lora_r4 (attempt 1)
+[2026-11-08 08:57:17] DONE  t1_qual_lora_r4
+[2026-11-08 08:57:17] START t1_eval_lora_r16 (attempt 1)
+[2026-11-08 09:07:29] DONE  t1_eval_lora_r16
+[2026-11-08 09:07:29] START t1_qual_lora_r16 (attempt 1)
+[2026-11-08 09:07:54] DONE  t1_qual_lora_r16
+[2026-11-08 09:07:54] START t1_eval_oplora_r16 (attempt 1)
+[2026-11-08 09:10:34] RESTART pipeline (diagnostic overflow fix)
+[2026-11-08 09:10:34] pipeline start on NVIDIA GeForce RTX 4090
+[2026-11-08 09:10:37] START t1_eval_full_ft_mid (attempt 1)
+[2026-11-08 09:21:49] DONE  t1_eval_full_ft_mid
+[2026-11-08 09:21:49] START t1_eval_full_ft (attempt 1)
+[2026-11-08 09:30:35] DONE  t1_eval_full_ft
+[2026-11-08 09:30:35] START t1_eval_oplora_r16 (attempt 1)
+[2026-11-08 09:38:53] DONE  t1_eval_oplora_r16
+[2026-11-08 09:38:53] START t1_qual_oplora_r16 (attempt 1)
+[2026-11-08 09:39:17] DONE  t1_qual_oplora_r16
+[2026-11-08 09:39:17] START t1_qual_collect (attempt 1)
+[2026-11-08 09:39:18] DONE  t1_qual_collect
+[2026-11-08 09:39:18] START t1_diagnostics (attempt 1)
+[2026-11-08 09:39:28] DONE  t1_diagnostics
+[2026-11-08 09:39:28] START t1_analyze (attempt 1)
+[2026-11-08 09:39:32] DONE  t1_analyze
+[2026-11-08 09:39:32] START t2_features (attempt 1)
+[2026-11-08 09:40:41] DONE  t2_features
+[2026-11-08 09:40:41] START t2_train (attempt 1)
+[2026-11-08 10:04:33] DONE  t2_train
+[2026-11-08 10:04:33] START t2_eval (attempt 1)
+[2026-11-08 10:04:57] DONE  t2_eval
+[2026-11-08 10:04:57] START t2_analyze (attempt 1)
+[2026-11-08 10:05:01] DONE  t2_analyze
+[2026-11-08 10:05:01] START t3_live (attempt 1)
+[2026-11-08 10:09:39] RESTORE optional 49-token Task 2 run (budget allows)
+[2026-11-08 10:56:20] DONE  t3_live
+[2026-11-08 10:56:20] START t3_analyze (attempt 1)
+[2026-11-08 10:56:22] DONE  t3_analyze
+[2026-11-08 10:56:22] START t2_train_49 (attempt 1)
+[2026-11-08 11:20:49] DONE  t2_train_49
+[2026-11-08 11:20:49] START t2_eval_49 (attempt 1)
+[2026-11-08 11:21:13] DONE  t2_eval_49
+[2026-11-08 11:21:13] START t2_analyze_49 (attempt 1)
+[2026-11-08 11:21:17] DONE  t2_analyze_49
+[2026-11-08 11:21:17] pipeline finished

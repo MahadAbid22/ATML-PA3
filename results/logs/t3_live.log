@@ -1,0 +1,54 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:27<00:27, 27.15s/it]Fetching 2 files: 100%|██████████| 2/2 [00:27<00:00, 11.30s/it]Fetching 2 files: 100%|██████████| 2/2 [00:27<00:00, 13.67s/it]
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<00:55,  7.82it/s]Loading weights:  15%|█▍        | 64/434 [00:00<00:01, 331.08it/s]Loading weights:  26%|██▌       | 111/434 [00:00<00:00, 387.45it/s]Loading weights:  37%|███▋      | 159/434 [00:00<00:00, 410.14it/s]Loading weights:  48%|████▊     | 207/434 [00:00<00:00, 401.81it/s]Loading weights:  57%|█████▋    | 249/434 [00:00<00:00, 397.08it/s]Loading weights:  67%|██████▋   | 291/434 [00:00<00:00, 390.45it/s]Loading weights:  76%|███████▋  | 331/434 [00:00<00:00, 385.87it/s]Loading weights:  86%|████████▋ | 375/434 [00:01<00:00, 385.97it/s]Loading weights:  95%|█████████▌| 414/434 [00:01<00:00, 378.34it/s]Loading weights: 100%|██████████| 434/434 [00:01<00:00, 380.83it/s]
+[10:06:18] live 1/50 test:943
+[10:07:51] live 2/50 test:2688
+[10:09:44] live 3/50 test:3504
+[10:10:10] live 4/50 test:4335
+[10:11:49] live 5/50 test:2460
+[10:12:49] live 6/50 test:1324
+[10:14:10] live 7/50 test:2340
+[10:14:38] live 8/50 test:1577
+[10:15:14] live 9/50 test:639
+[10:17:00] live 10/50 test:2892
+[10:17:51] live 11/50 test:4702
+[10:18:56] live 12/50 test:1709
+[10:19:23] live 13/50 test:4041
+[10:20:50] live 14/50 test:2119
+[10:21:36] live 15/50 test:2087
+[10:23:19] live 16/50 test:4549
+[10:24:42] live 17/50 test:2732
+[10:25:15] live 18/50 test:1433
+[10:27:04] live 19/50 test:3285
+[10:27:48] live 20/50 test:29
+[10:29:23] live 21/50 test:2948
+[10:30:05] live 22/50 test:1997
+[10:31:11] live 23/50 test:414
+[10:32:06] live 24/50 test:1808
+[10:32:37] live 25/50 test:4962
+[10:33:22] live 26/50 test:274
+[10:34:00] live 27/50 test:916
+[10:34:44] live 28/50 test:534
+[10:36:28] live 29/50 test:2177
+[10:37:18] live 30/50 test:1043
+[10:37:44] live 31/50 test:373
+[10:38:24] live 32/50 test:1379
+[10:39:38] live 33/50 test:196
+[10:40:47] live 34/50 test:2134
+[10:41:56] live 35/50 test:771
+[10:43:24] live 36/50 test:3572
+[10:45:07] live 37/50 test:2358
+[10:45:39] live 38/50 test:2019
+[10:46:17] live 39/50 test:4144
+[10:47:01] live 40/50 test:3314
+[10:47:43] live 41/50 test:3239
+[10:49:03] live 42/50 test:4678
+[10:50:08] live 43/50 test:1122
+[10:50:37] live 44/50 test:4168
+[10:50:57] live 45/50 test:1300
+[10:52:38] live 46/50 test:4516
+[10:53:50] live 47/50 test:1903
+[10:54:30] live 48/50 test:1916
+[10:55:51] live 49/50 test:3409
+[10:56:19] live 50/50 test:3617
+[10:56:20] live summary: {'n_questions': 50, 'transitions_initial_to_revised': {'wrong_to_correct': 4, 'correct_to_wrong': 0, 'correct_to_correct': 29, 'wrong_to_wrong': 17}, 'strategies': {'single': {'accuracy': 0.64, 'mean_input_tokens': 108.38, 'mean_output_tokens': 652.0, 'mean_total_tokens': 760.38, 'mean_seconds': 12.767707164967433, 'truncation_rate_calls': 0.0, 'final_extraction_failure_rate': 0.0}, 'parallel': {'accuracy': 0.58, 'mean_input_tokens': 325.14, 'mean_output_tokens': 1869.84, 'mean_total_tokens': 2194.98, 'mean_seconds': 36.56115036303177, 'truncation_rate_calls': 0.18, 'final_extraction_failure_rate': 0.2}, 'refinement': {'accuracy': 0.66, 'mean_input_tokens': 880.6, 'mean_output_tokens': 1213.28, 'mean_total_tokens': 2093.88, 'mean_seconds': 23.82825067028403, 'truncation_rate_calls': 0.1, 'final_extraction_failure_rate': 0.0}}}

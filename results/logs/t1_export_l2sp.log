@@ -1,0 +1,3 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:37,  8.33it/s]Loading weights:  55%|█████▍    | 171/311 [00:00<00:00, 923.10it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1006.24it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.26it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.26it/s]
+[03:21:55] [l2sp] exported to /workspace/pa3_outputs/task1/models/l2sp

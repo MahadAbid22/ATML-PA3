@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<00:37,  8.22it/s]Loading weights:  55%|█████▍    | 171/311 [00:00<00:00, 918.77it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 996.66it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Map:   0%|          | 0/10042 [00:00<?, ? examples/s]Map:  14%|█▍        | 1435/10042 [00:00<00:00, 14153.09 examples/s]Map:  33%|███▎      | 3291/10042 [00:00<00:00, 16724.17 examples/s]Map:  50%|████▉     | 5000/10042 [00:00<00:00, 16691.71 examples/s]Map:  70%|██████▉   | 7000/10042 [00:00<00:00, 16998.86 examples/s]Map:  90%|████████▉ | 9000/10042 [00:00<00:00, 17185.15 examples/s]Map: 100%|██████████| 10042/10042 [00:00<00:00, 16865.36 examples/s]
+[09:39:27] diagnostics written: 18 weight rows, 1152 activation rows

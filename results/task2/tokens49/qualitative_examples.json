@@ -1,0 +1,134 @@
+[
+  {
+    "suite": "grounding_test",
+    "pair_id": "grounding_test-0",
+    "rule": "both correct",
+    "question": "Does this image contain a sheep?",
+    "sides": {
+      "a": {
+        "reference": "yes",
+        "correct": "yes",
+        "complementary": "no",
+        "mismatched": "no",
+        "none": "yes"
+      },
+      "b": {
+        "reference": "no",
+        "correct": "no",
+        "complementary": "yes",
+        "mismatched": "no",
+        "none": "yes"
+      }
+    }
+  },
+  {
+    "suite": "grounding_test",
+    "pair_id": "grounding_test-25",
+    "rule": "identical answers",
+    "question": "Does this image contain a hot dog?",
+    "sides": {
+      "a": {
+        "reference": "yes",
+        "correct": "no",
+        "complementary": "no",
+        "mismatched": "no",
+        "none": "yes"
+      },
+      "b": {
+        "reference": "no",
+        "correct": "no",
+        "complementary": "no",
+        "mismatched": "no",
+        "none": "yes"
+      }
+    }
+  },
+  {
+    "suite": "grounding_test",
+    "pair_id": "grounding_test-1",
+    "rule": "swap follows partner",
+    "question": "Does this image contain a dog?",
+    "sides": {
+      "a": {
+        "reference": "yes",
+        "correct": "yes",
+        "complementary": "no",
+        "mismatched": "no",
+        "none": "yes"
+      },
+      "b": {
+        "reference": "no",
+        "correct": "no",
+        "complementary": "yes",
+        "mismatched": "yes",
+        "none": "yes"
+      }
+    }
+  },
+  {
+    "suite": "vqa_test",
+    "pair_id": "10442001-107564001",
+    "rule": "both correct",
+    "question": "What game are the men playing?",
+    "sides": {
+      "a": {
+        "reference": "baseball",
+        "correct": "baseball",
+        "complementary": "soccer",
+        "mismatched": "frisbee",
+        "none": "war"
+      },
+      "b": {
+        "reference": "soccer",
+        "correct": "soccer",
+        "complementary": "baseball",
+        "mismatched": "fire hydrant",
+        "none": "war"
+      }
+    }
+  },
+  {
+    "suite": "vqa_test",
+    "pair_id": "10800000-390190005",
+    "rule": "identical answers",
+    "question": "How many sink in the bathroom?",
+    "sides": {
+      "a": {
+        "reference": "1",
+        "correct": "1",
+        "complementary": "1",
+        "mismatched": "1",
+        "none": "1"
+      },
+      "b": {
+        "reference": "2",
+        "correct": "1",
+        "complementary": "1",
+        "mismatched": "1",
+        "none": "1"
+      }
+    }
+  },
+  {
+    "suite": "vqa_test",
+    "pair_id": "124712001-529806005",
+    "rule": "swap follows partner",
+    "question": "Is the player running?",
+    "sides": {
+      "a": {
+        "reference": "no",
+        "correct": "no",
+        "complementary": "yes",
+        "mismatched": "no",
+        "none": "yes"
+      },
+      "b": {
+        "reference": "yes",
+        "correct": "yes",
+        "complementary": "no",
+        "mismatched": "no",
+        "none": "yes"
+      }
+    }
+  }
+]

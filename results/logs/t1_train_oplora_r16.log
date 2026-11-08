@@ -1,0 +1,58 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 122/311 [00:00<00:00, 1212.73it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1850.54it/s]
+[05:56:16] [oplora_r16] trainable parameters: 10,092,544
+[05:56:21] [oplora_r16] update 1/1250 loss 1.0284 lr 0.00e+00 gnorm 3.697 5.43s/update
+[05:58:22] [oplora_r16] update 25/1250 loss 0.2838 lr 1.26e-04 gnorm 0.421 4.94s/update
+[06:00:27] [oplora_r16] update 50/1250 loss 0.2565 lr 2.00e-04 gnorm 0.278 5.11s/update
+[06:02:32] [oplora_r16] update 75/1250 loss 0.2560 lr 2.00e-04 gnorm 0.294 5.08s/update
+[06:04:37] [oplora_r16] update 100/1250 loss 0.2585 lr 1.99e-04 gnorm 0.281 5.08s/update
+[06:06:42] [oplora_r16] update 125/1250 loss 0.2820 lr 1.98e-04 gnorm 0.296 5.12s/update
+[06:08:46] [oplora_r16] update 150/1250 loss 0.2446 lr 1.96e-04 gnorm 0.275 4.89s/update
+[06:10:50] [oplora_r16] update 175/1250 loss 0.2170 lr 1.94e-04 gnorm 0.264 4.91s/update
+[06:12:53] [oplora_r16] update 200/1250 loss 0.2084 lr 1.91e-04 gnorm 0.266 4.89s/update
+[06:14:56] [oplora_r16] update 225/1250 loss 0.2541 lr 1.89e-04 gnorm 0.279 4.89s/update
+[06:17:00] [oplora_r16] update 250/1250 loss 0.2524 lr 1.85e-04 gnorm 0.314 4.90s/update
+[06:19:03] [oplora_r16] update 275/1250 loss 0.2408 lr 1.82e-04 gnorm 0.235 4.89s/update
+[06:21:06] [oplora_r16] update 300/1250 loss 0.2162 lr 1.78e-04 gnorm 0.273 4.89s/update
+[06:22:06] [oplora_r16] checkpoint 312: 0.11 GB
+[06:23:11] [oplora_r16] update 325/1250 loss 0.2432 lr 1.74e-04 gnorm 0.279 5.03s/update
+[06:25:15] [oplora_r16] update 350/1250 loss 0.2292 lr 1.69e-04 gnorm 0.254 5.04s/update
+[06:27:19] [oplora_r16] update 375/1250 loss 0.1929 lr 1.64e-04 gnorm 0.250 4.95s/update
+[06:29:23] [oplora_r16] update 400/1250 loss 0.2137 lr 1.59e-04 gnorm 0.268 4.91s/update
+[06:31:26] [oplora_r16] update 425/1250 loss 0.2336 lr 1.54e-04 gnorm 0.274 4.92s/update
+[06:33:30] [oplora_r16] update 450/1250 loss 0.2314 lr 1.48e-04 gnorm 0.270 4.89s/update
+[06:35:34] [oplora_r16] update 475/1250 loss 0.1830 lr 1.43e-04 gnorm 0.217 4.89s/update
+[06:37:38] [oplora_r16] update 500/1250 loss 0.2119 lr 1.37e-04 gnorm 0.254 4.91s/update
+[06:39:42] [oplora_r16] update 525/1250 loss 0.2030 lr 1.31e-04 gnorm 0.240 4.90s/update
+[06:41:46] [oplora_r16] update 550/1250 loss 0.2056 lr 1.24e-04 gnorm 0.257 4.91s/update
+[06:43:49] [oplora_r16] update 575/1250 loss 0.2066 lr 1.18e-04 gnorm 0.278 4.88s/update
+[06:45:53] [oplora_r16] update 600/1250 loss 0.2034 lr 1.12e-04 gnorm 0.252 5.03s/update
+[06:47:57] [oplora_r16] update 625/1250 loss 0.2040 lr 1.05e-04 gnorm 0.228 5.04s/update
+[06:47:57] [oplora_r16] checkpoint 625: 0.11 GB
+[06:50:01] [oplora_r16] update 650/1250 loss 0.1820 lr 9.87e-05 gnorm 0.251 4.91s/update
+[06:52:05] [oplora_r16] update 675/1250 loss 0.2191 lr 9.22e-05 gnorm 0.255 4.90s/update
+[06:54:08] [oplora_r16] update 700/1250 loss 0.2142 lr 8.58e-05 gnorm 0.249 4.88s/update
+[06:56:12] [oplora_r16] update 725/1250 loss 0.1961 lr 7.94e-05 gnorm 0.246 5.02s/update
+[06:58:16] [oplora_r16] update 750/1250 loss 0.1589 lr 7.31e-05 gnorm 0.235 5.02s/update
+[07:00:20] [oplora_r16] update 775/1250 loss 0.1848 lr 6.69e-05 gnorm 0.229 4.86s/update
+[07:02:22] [oplora_r16] update 800/1250 loss 0.1835 lr 6.09e-05 gnorm 0.244 5.00s/update
+[07:04:26] [oplora_r16] update 825/1250 loss 0.2281 lr 5.50e-05 gnorm 0.272 5.02s/update
+[07:06:30] [oplora_r16] update 850/1250 loss 0.2045 lr 4.93e-05 gnorm 0.229 4.92s/update
+[07:08:33] [oplora_r16] update 875/1250 loss 0.1918 lr 4.39e-05 gnorm 0.253 4.91s/update
+[07:10:36] [oplora_r16] update 900/1250 loss 0.1844 lr 3.86e-05 gnorm 0.245 4.88s/update
+[07:12:39] [oplora_r16] update 925/1250 loss 0.1949 lr 3.36e-05 gnorm 0.236 4.90s/update
+[07:13:39] [oplora_r16] checkpoint 937: 0.11 GB
+[07:14:42] [oplora_r16] update 950/1250 loss 0.2048 lr 2.89e-05 gnorm 0.271 4.87s/update
+[07:16:46] [oplora_r16] update 975/1250 loss 0.2201 lr 2.45e-05 gnorm 0.274 4.98s/update
+[07:18:49] [oplora_r16] update 1000/1250 loss 0.2216 lr 2.04e-05 gnorm 0.252 4.90s/update
+[07:20:53] [oplora_r16] update 1025/1250 loss 0.1918 lr 1.67e-05 gnorm 0.245 4.89s/update
+[07:22:57] [oplora_r16] update 1050/1250 loss 0.2319 lr 1.33e-05 gnorm 0.270 4.89s/update
+[07:25:00] [oplora_r16] update 1075/1250 loss 0.1799 lr 1.02e-05 gnorm 0.267 4.91s/update
+[07:27:04] [oplora_r16] update 1100/1250 loss 0.2133 lr 7.56e-06 gnorm 0.271 4.91s/update
+[07:29:04] [oplora_r16] update 1125/1250 loss 0.2101 lr 5.29e-06 gnorm 0.269 4.74s/update
+[07:31:04] [oplora_r16] update 1150/1250 loss 0.1716 lr 3.41e-06 gnorm 0.239 4.76s/update
+[07:33:04] [oplora_r16] update 1175/1250 loss 0.1828 lr 1.93e-06 gnorm 0.233 4.74s/update
+[07:35:04] [oplora_r16] update 1200/1250 loss 0.1781 lr 8.73e-07 gnorm 0.244 4.87s/update
+[07:37:04] [oplora_r16] update 1225/1250 loss 0.2413 lr 2.27e-07 gnorm 0.263 4.82s/update
+[07:39:06] [oplora_r16] update 1250/1250 loss 0.1796 lr 3.36e-10 gnorm 0.241 4.85s/update
+[07:39:06] [oplora_r16] checkpoint 1250: 0.11 GB
+[07:39:07] [oplora_r16] done: 102.8 min, peak 5.11 GB

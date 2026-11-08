@@ -1,0 +1,58 @@
+# Task 1 - LLM fine-tuning (all values from the assignment unless marked "choice")
+model: Qwen/Qwen3-0.6B
+model_revision: null          # resolved commit is recorded in results/task1/run_info.json
+seed: 6304
+
+data:
+  source: meta-math/MetaMathQA
+  gsm8k: openai/gsm8k
+  n_examples: 40000
+  max_len: 2048               # formatted (prompt + response + end-of-turn) tokens
+
+train:
+  micro_batch: 2
+  grad_accum: 16              # effective batch 32
+  updates: 1250
+  warmup: 38
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  weight_decay: 0.01          # biases and <2-D parameters excluded
+  clip: 1.0
+  checkpoint_updates: [312, 625, 937, 1250]
+  midpoint_update: 625
+
+targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+methods:
+  full_ft:   {kind: full,   lr: 2.0e-5, l2sp: 0.0}
+  l2sp:      {kind: full,   lr: 2.0e-5, l2sp: 1.0e-3}
+  lora_r4:   {kind: lora,   lr: 2.0e-4, r: 4,  alpha: 8,  dropout: 0.05}
+  lora_r16:  {kind: lora,   lr: 2.0e-4, r: 16, alpha: 32, dropout: 0.05}
+  oplora_r16: {kind: oplora, lr: 2.0e-4, r: 16, alpha: 32, dropout: 0.05, k: 128}
+
+eval:
+  gsm8k_task: gsm8k_cot
+  gsm8k_max_gen_toks: 1024
+  likelihood_tasks: [hellaswag, boolq, arc_easy]
+  batch_size_gen: 64          # choice (throughput only)
+  batch_size_ll: 64           # choice (throughput only)
+  conditions:                 # seven evaluation conditions
+    - baseline
+    - full_ft_mid
+    - full_ft
+    - l2sp
+    - lora_r4
+    - lora_r16
+    - oplora_r16
+
+diagnostics:
+  layers: [0, 13, 27]
+  module: down_proj
+  k: 128
+  n_probe_math: 32
+  n_probe_nonmath: 32
+
+qualitative:
+  file: data/task1/first_plot_questions.yaml
+  max_new_tokens: 512
+  annotate_ids: [what_is_your_wish, enough_of_my_husband]   # first and last plain questions

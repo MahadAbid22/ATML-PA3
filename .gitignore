@@ -1,0 +1,37 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# raw / supplied data and caches (not committed, per assignment rules)
+data/supplied/
+data/raw/
+data/coco/
+data/vqa/
+cache/
+hf_cache/
+
+# large checkpoints and merged models
+checkpoints/
+outputs/**/*.safetensors
+outputs/**/*.bin
+outputs/**/*.pt
+*.safetensors
+*.pt
+
+# local notes
+.DS_Store
+
+# local laptop testing (never committed)
+_local/
+results/**/smoke/
+results/task1/smoke/
+results/task3/smoke/
+results/task3/live_smoke/
+results/task2/*_smoke/
+report/figures/*smoke*
+report/tables/*smoke*
+outputs/
+STUDY_GUIDE.md
+*.log.tmp

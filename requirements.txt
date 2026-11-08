@@ -1,0 +1,21 @@
+# Python 3.12. Install PyTorch from the CUDA 12.6 index first (see scripts/setup_vast.sh):
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+torch==2.14.1
+transformers==5.22.2
+tokenizers==0.23.3
+safetensors==0.8.0
+accelerate==1.15.0
+datasets==5.1.0
+huggingface_hub==2.4.0
+lm_eval==0.4.13
+math-verify==0.9.0
+latex2sympy2_extended==1.11.0
+sympy==1.14.0
+numpy==2.5.4
+pandas==3.1.1
+pyarrow==26.0.1
+scipy==1.18.1
+matplotlib==3.11.2
+pillow==13.0.0
+PyYAML==6.0.3
+gdown

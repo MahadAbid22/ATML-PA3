@@ -18,7 +18,7 @@ import time
 
 import torch
 
-from common.utils import RESULTS, environment_info, gpu_peak_gb, load_yaml, log, save_json
+from common.utils import RESULTS, environment_info, gpu_peak_gb, load_json, load_yaml, log, save_json
 from task1_finetune.export import model_dir
 from task1_finetune.train import CFG
 
@@ -33,7 +33,7 @@ def _num(s: str | None):
     try:
         v = float(s)
         return int(v) if v == int(v) else v
-    except ValueError:
+    except (ValueError, OverflowError):  # OverflowError: a runaway digit string parses to infinity
         return None
 
 
@@ -86,12 +86,54 @@ def evaluate(cond: str, limit: int | None = None, smoke: bool = False, batch_gen
                   torch_random_seed=seed, fewshot_random_seed=seed, bootstrap_iters=1000)
     timing = {}
 
-    # ---- GSM8K (generation, chat template, thinking disabled)
+    # ---- GSM8K (generation, chat template, thinking disabled); kept if a later step fails
+    task = ecfg["gsm8k_task"]
+    partial = out_dir / "gsm8k_partial.json"
+    if partial.exists() and (out_dir / "gsm8k_samples.jsonl.gz").exists():
+        p = load_json(partial)
+        gsm, timing, gsm_versions = p["gsm8k"], p["timing"], p["versions"]
+        log(f"[{cond}] reusing finished GSM8K results from {partial.name}")
+    else:
+        gsm, gsm_versions = _run_gsm8k(lm, tok, task, max_gen, common, out_dir, timing, simple_evaluate)
+        save_json({"gsm8k": gsm, "timing": timing, "versions": gsm_versions}, partial)
+
+    # ---- likelihood benchmarks (no chat template); full-vocabulary logits are materialised per
+    # batch, so these use a smaller batch than generation
+    lm.batch_size_per_gpu = batch_ll or ecfg["batch_size_ll"]
     t0 = time.perf_counter()
-    r = simple_evaluate(model=lm, tasks=[ecfg["gsm8k_task"]], apply_chat_template=True, fewshot_as_multiturn=False,
+    r2 = simple_evaluate(model=lm, tasks=list(ecfg["likelihood_tasks"]), apply_chat_template=False, **common)
+    timing["likelihood_seconds"] = time.perf_counter() - t0
+    ll = {}
+    for t in ecfg["likelihood_tasks"]:
+        rr = r2["results"][t]
+        ll[t] = {"acc": rr.get("acc,none"), "acc_stderr": rr.get("acc_stderr,none"),
+                 "acc_norm": rr.get("acc_norm,none"), "acc_norm_stderr": rr.get("acc_norm_stderr,none"),
+                 "n": len(r2["samples"][t])}
+        srows = []
+        for s in r2["samples"][t]:
+            srows.append({"doc_id": s["doc_id"], "target": s["target"],
+                          "loglik": [float(x[0]) for x in s["filtered_resps"]],
+                          "acc": s.get("acc"), "acc_norm": s.get("acc_norm")})
+        _write_gz(srows, out_dir / f"{t}_samples.jsonl.gz")
+
+    agg = {"condition": cond, "model_path": path, "gsm8k": gsm, **ll, "timing": timing, "gpu": gpu_peak_gb(),
+           "lm_eval_config": {"gsm8k_task": task, "num_fewshot": 0, "max_gen_toks": max_gen, "greedy": True,
+                              "chat_template_gsm8k": True, "enable_thinking": False, "dtype": "float16",
+                              "batch_size_gen": batch_gen or ecfg["batch_size_gen"],
+                              "batch_size_ll": batch_ll or ecfg["batch_size_ll"], "limit": limit},
+           "task_versions": {**gsm_versions, **r2.get("versions", {})},
+           "environment": environment_info()}
+    save_json(agg, out_dir / "aggregate.json")
+    log(f"[{cond}] GSM8K flex {gsm['flexible_extract_em']:.4f} | "
+        + " | ".join(f"{t} acc {ll[t]['acc']:.4f}" for t in ll))
+    return agg
+
+
+def _run_gsm8k(lm, tok, task, max_gen, common, out_dir, timing, simple_evaluate):
+    t0 = time.perf_counter()
+    r = simple_evaluate(model=lm, tasks=[task], apply_chat_template=True, fewshot_as_multiturn=False,
                         gen_kwargs={"max_gen_toks": max_gen, "do_sample": False}, **common)
     timing["gsm8k_seconds"] = time.perf_counter() - t0
-    task = ecfg["gsm8k_task"]
     res = r["results"][task]
     rows = []
     for doc_id, ss in sorted(_by_doc(r["samples"][task]).items()):
@@ -124,36 +166,7 @@ def evaluate(cond: str, limit: int | None = None, smoke: bool = False, batch_gen
         "mean_response_tokens": sum(r_["response_tokens"] for r_ in rows) / n,
         "diagnostic_boxed_or_last_number_acc": sum(r_["correct_diagnostic"] for r_ in rows) / n,
     }
-
-    # ---- likelihood benchmarks (no chat template)
-    if batch_ll:
-        lm.batch_size_per_gpu = batch_ll
-    t0 = time.perf_counter()
-    r2 = simple_evaluate(model=lm, tasks=list(ecfg["likelihood_tasks"]), apply_chat_template=False, **common)
-    timing["likelihood_seconds"] = time.perf_counter() - t0
-    ll = {}
-    for t in ecfg["likelihood_tasks"]:
-        rr = r2["results"][t]
-        ll[t] = {"acc": rr.get("acc,none"), "acc_stderr": rr.get("acc_stderr,none"),
-                 "acc_norm": rr.get("acc_norm,none"), "acc_norm_stderr": rr.get("acc_norm_stderr,none"),
-                 "n": len(r2["samples"][t])}
-        srows = []
-        for s in r2["samples"][t]:
-            srows.append({"doc_id": s["doc_id"], "target": s["target"],
-                          "loglik": [float(x[0]) for x in s["filtered_resps"]],
-                          "acc": s.get("acc"), "acc_norm": s.get("acc_norm")})
-        _write_gz(srows, out_dir / f"{t}_samples.jsonl.gz")
-
-    agg = {"condition": cond, "model_path": path, "gsm8k": gsm, **ll, "timing": timing, "gpu": gpu_peak_gb(),
-           "lm_eval_config": {"gsm8k_task": task, "num_fewshot": 0, "max_gen_toks": max_gen, "greedy": True,
-                              "chat_template_gsm8k": True, "enable_thinking": False, "dtype": "float16",
-                              "limit": limit},
-           "task_versions": {**r.get("versions", {}), **r2.get("versions", {})},
-           "environment": environment_info()}
-    save_json(agg, out_dir / "aggregate.json")
-    log(f"[{cond}] GSM8K flex {gsm['flexible_extract_em']:.4f} | "
-        + " | ".join(f"{t} acc {ll[t]['acc']:.4f}" for t in ll))
-    return agg
+    return gsm, dict(r.get("versions", {}))
 
 
 if __name__ == "__main__":

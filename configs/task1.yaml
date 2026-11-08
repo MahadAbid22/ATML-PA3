@@ -35,7 +35,7 @@ eval:
   gsm8k_max_gen_toks: 1024
   likelihood_tasks: [hellaswag, boolq, arc_easy]
   batch_size_gen: 64          # choice (throughput only)
-  batch_size_ll: 64           # choice (throughput only)
+  batch_size_ll: 16           # choice (throughput only); full-vocabulary logits per batch, 64 runs out of memory
   conditions:                 # seven evaluation conditions
     - baseline
     - full_ft_mid

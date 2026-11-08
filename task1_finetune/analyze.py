@@ -6,6 +6,8 @@ Usage:   python -m task1_finetune.analyze
 from __future__ import annotations
 
 import csv
+import gzip
+import json
 
 import numpy as np
 
@@ -258,6 +260,26 @@ def annotation_table():
     return summary
 
 
+def gsm8k_format_check():
+    """Count GSM8K answers that the diagnostic extraction marks right and the stock flexible filter marks wrong,
+    and how many of those are caused by the filter reading a LaTeX "$$" as the final number."""
+    out = {}
+    for c in LABEL:
+        path = T1 / "eval" / c / "gsm8k_samples.jsonl.gz"
+        if not path.exists():
+            continue
+        with gzip.open(path, "rt", encoding="utf-8") as f:
+            rows = [json.loads(line) for line in f]
+        missed = [r for r in rows if r["correct_diagnostic"] == 1 and r["correct_flexible-extract"] == 0]
+        out[c] = {"n": len(rows),
+                  "flexible_extract_accuracy": sum(r["correct_flexible-extract"] for r in rows) / len(rows),
+                  "diagnostic_accuracy": sum(r["correct_diagnostic"] for r in rows) / len(rows),
+                  "diagnostic_right_flexible_wrong": len(missed),
+                  "of_which_flexible_extracted_double_dollar": sum(r["extracted_flexible-extract"] == "$$" for r in missed)}
+    save_json(out, T1 / "gsm8k_format_check.json")
+    return out
+
+
 def main(smoke: bool = False):
     global T1
     if smoke:
@@ -271,6 +293,7 @@ def main(smoke: bool = False):
     diag = diagnostics_tables()
     diagnostics_figure(diag)
     annotation_table()
+    gsm8k_format_check()
     save_json({"benchmarks": bench, "resources": res, "diagnostics": diag}, T1 / "summary.json")
     print("task1 analysis written")
 

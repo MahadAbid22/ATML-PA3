@@ -142,7 +142,8 @@ and all optimizer states are deleted to save disk, after their sizes are logged.
 
 The reported GSM8K metric is the stock `gsm8k_cot` flexible-extract exact match. I also save a diagnostic column (the
 number in the last `\boxed{}`, otherwise the last number) to separate answer-format effects from correctness. It is
-never used as the primary score. The log-likelihood benchmarks use batch size 16 because batch size 64 ran out of
+never used as the primary score. `analyze` writes `results/task1/gsm8k_format_check.json`, which counts the answers
+where the two scorers disagree. The log-likelihood benchmarks use batch size 16 because batch size 64 ran out of
 memory. This changes throughput only.
 
 The fixed 42-response annotation in `results/task1/qualitative/annotation_subset.csv` is scored by hand, and `analyze`

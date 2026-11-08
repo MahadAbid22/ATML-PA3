@@ -225,6 +225,39 @@ def diagnostics_figure(diag):
     savefig(fig, "task1_diagnostics")
 
 
+def annotation_table():
+    """Summarise the hand-scored 42-response subset; skipped until every row has been scored."""
+    with open(T1 / "qualitative" / "annotation_subset.csv", encoding="utf-8", newline="") as f:
+        ann = list(csv.DictReader(f))
+    if not ann or any(r["format_compliance(0-2)"] == "" for r in ann):
+        return None
+    formats = ("plain", "json", "template")
+    mean = lambda rows, col: float(np.mean([int(r[col]) for r in rows]))
+    count = lambda rows, col: sum(r[col] == "y" for r in rows)
+    table, conds = [], {}
+    for c, name in LABEL.items():
+        sub = [r for r in ann if r["condition"] == c]
+        by_fmt = {f: mean([r for r in sub if r["format"] == f], "format_compliance(0-2)") for f in formats}
+        s = {"n": len(sub), "format": mean(sub, "format_compliance(0-2)"), "format_by_type": by_fmt,
+             "coherence": mean(sub, "coherence_relevance(0-2)"), "repetition": mean(sub, "repetition(0-2)"),
+             "math_framing": count(sub, "unnecessary_math_framing(y/n)"),
+             "inappropriate": count(sub, "inappropriate_content(y/n)"),
+             "truncated": sum(r["truncated"] == "True" for r in sub)}
+        conds[c] = s
+        table.append([name, fmt(s["format"], 2), " / ".join(fmt(by_fmt[f], 1) for f in formats), fmt(s["coherence"], 2),
+                      fmt(s["repetition"], 2), s["math_framing"], s["inappropriate"], s["truncated"]])
+    latex_table(["Model", "Format", "Plain / JSON / Tmpl.", "Coherence", "Repetition", "Math", "Inappr.", "Trunc."], table,
+                "Hand annotation of the fixed 42-response subset.", "tab:t1-annotation", "task1_annotation",
+                size="\\scriptsize", notes="Means over six responses per model (two questions, three formats). Format and "
+                "coherence: 2 is best. Repetition: 0 is best. Math, Inappr. and Trunc. are counts out of six.")
+    summary = {"scale": {"format": "2 follows the requested format, 1 partly, 0 no",
+                         "coherence": "2 clear and answers the prompt, 1 partly on topic or muddled, 0 incoherent or off topic",
+                         "repetition": "0 none, 1 some repeated phrasing, 2 heavy looping"},
+               "conditions": conds}
+    save_json(summary, T1 / "qualitative" / "annotation_summary.json")
+    return summary
+
+
 def main(smoke: bool = False):
     global T1
     if smoke:
@@ -237,6 +270,7 @@ def main(smoke: bool = False):
     res = resources_table(cfg)
     diag = diagnostics_tables()
     diagnostics_figure(diag)
+    annotation_table()
     save_json({"benchmarks": bench, "resources": res, "diagnostics": diag}, T1 / "summary.json")
     print("task1 analysis written")
 

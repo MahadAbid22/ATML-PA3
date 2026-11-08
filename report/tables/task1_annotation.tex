@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & Format & Plain / JSON / Tmpl. & Coherence & Repetition & Math & Inappr. & Trunc. \\
+\midrule
+Baseline & 1.67 & 2.0 / 1.0 / 2.0 & 1.50 & 0.00 & 0 & 0 & 0 \\
+Full FT (mid) & 1.17 & 1.0 / 1.0 / 1.5 & 1.17 & 1.17 & 2 & 0 & 3 \\
+Full FT & 1.50 & 1.5 / 1.5 / 1.5 & 1.33 & 0.67 & 3 & 0 & 1 \\
+Full FT + L2-SP & 1.33 & 1.5 / 1.0 / 1.5 & 1.17 & 0.83 & 2 & 0 & 2 \\
+LoRA r=4 & 2.00 & 2.0 / 2.0 / 2.0 & 1.50 & 0.00 & 0 & 0 & 0 \\
+LoRA r=16 & 1.67 & 2.0 / 1.5 / 1.5 & 1.67 & 0.50 & 2 & 0 & 0 \\
+OPLoRA r=16 & 1.67 & 2.0 / 1.5 / 1.5 & 1.50 & 0.83 & 3 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize Means over six responses per model (two questions, three formats). Format and coherence: 2 is best. Repetition: 0 is best. Math, Inappr. and Trunc. are counts out of six.}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Hand annotation of the fixed 42-response subset.}
+\label{tab:t1-annotation}
+\end{table}

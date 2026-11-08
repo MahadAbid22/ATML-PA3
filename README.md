@@ -111,6 +111,8 @@ here. All of them are in the configs.
 * Reported GSM8K metric: stock `gsm8k_cot` flexible-extract exact match. An extra *diagnostic*
   column (number in the last `\boxed{}`, else the last number) separates answer-format effects from
   correctness. It is never used as the primary score.
+* The fixed 42-response annotation (`results/task1/qualitative/annotation_subset.csv`) is scored by hand.
+  `analyze` summarises it in `report/tables/task1_annotation.tex`.
 
 **Task 2**
 * Grounding evaluation pairs are split evenly between presence and counting (dev 12 + 12, test 32 + 32).

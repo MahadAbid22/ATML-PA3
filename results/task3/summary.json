@@ -1,0 +1,30 @@
+{
+  "math": {
+    "eval_N32": {
+      "first_ans": 0.6435,
+      "self_consistency": 0.737875,
+      "best_logp": 0.64,
+      "best_selfcert": 0.70625,
+      "rwc_selfcert": 0.7555,
+      "shortest": 0.62375
+    },
+    "oracle_N32": 0.91375
+  },
+  "mathvista": {
+    "eval_N32": {
+      "first_ans": 0.545,
+      "self_consistency": 0.63775,
+      "best_logp": 0.49125,
+      "best_selfcert": 0.5575,
+      "rwc_selfcert": 0.64625,
+      "shortest": 0.541,
+      "best_vision": 0.5425,
+      "rwc_vision": 0.6425,
+      "best_visconf": 0.585,
+      "rwc_visconf": 0.64875,
+      "best_visconf_token": 0.56875,
+      "rwc_visconf_token": 0.645
+    },
+    "oracle_N32": 0.90375
+  }
+}

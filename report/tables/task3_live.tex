@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\toprule
+Strategy & Acc. & In tok. & Out tok. & Time (s) & Trunc. & No extr. \\
+\midrule
+Single long (1$\times$3072) & 64.0 & 108 & 652 & 12.8 & 0.0 & 0.0 \\
+Parallel SC (3$\times$1024) & 58.0 & 325 & 1870 & 36.6 & 18.0 & 20.0 \\
+Refinement (1024 + 2048) & 66.0 & 881 & 1213 & 23.8 & 10.0 & 0.0 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize Refinement transitions vs shared initial answer: wrong$\to$correct 4, correct$\to$wrong 0, unchanged correct 29, unchanged wrong 17.}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Live MATH comparison on 50 held-out questions.}
+\label{tab:t3-live}
+\end{table}

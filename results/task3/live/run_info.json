@@ -1,0 +1,25 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "dtype": "float16",
+  "batch_size": 1,
+  "model_load_seconds": 30.521034067030996,
+  "gpu": {
+    "peak_allocated_gb": 5.893307685852051,
+    "peak_reserved_gb": 5.9921875
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

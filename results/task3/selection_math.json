@@ -1,0 +1,744 @@
+{
+  "dev": {
+    "n_questions": 200,
+    "budgets": {
+      "1": {
+        "oracle_coverage": 0.74,
+        "distinct_groups": 1.0,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          },
+          "self_consistency": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          },
+          "best_logp": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          },
+          "best_selfcert": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          },
+          "shortest": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.26
+          }
+        }
+      },
+      "2": {
+        "oracle_coverage": 0.8135,
+        "distinct_groups": 1.273,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.0735,
+            "no_correct_candidate": 0.1865
+          },
+          "self_consistency": {
+            "accuracy": 0.74,
+            "token_cost": 1144.814,
+            "selection_miss": 0.0735,
+            "no_correct_candidate": 0.1865
+          },
+          "best_logp": {
+            "accuracy": 0.743,
+            "token_cost": 1144.814,
+            "selection_miss": 0.0705,
+            "no_correct_candidate": 0.1865
+          },
+          "best_selfcert": {
+            "accuracy": 0.7635,
+            "token_cost": 1144.814,
+            "selection_miss": 0.05,
+            "no_correct_candidate": 0.1865
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.7635,
+            "token_cost": 1144.814,
+            "selection_miss": 0.05,
+            "no_correct_candidate": 0.1865
+          },
+          "shortest": {
+            "accuracy": 0.765,
+            "token_cost": 1144.814,
+            "selection_miss": 0.0485,
+            "no_correct_candidate": 0.1865
+          }
+        }
+      },
+      "4": {
+        "oracle_coverage": 0.856,
+        "distinct_groups": 1.6785,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.116,
+            "no_correct_candidate": 0.144
+          },
+          "self_consistency": {
+            "accuracy": 0.7935,
+            "token_cost": 2281.855,
+            "selection_miss": 0.0625,
+            "no_correct_candidate": 0.144
+          },
+          "best_logp": {
+            "accuracy": 0.746,
+            "token_cost": 2281.855,
+            "selection_miss": 0.11,
+            "no_correct_candidate": 0.144
+          },
+          "best_selfcert": {
+            "accuracy": 0.778,
+            "token_cost": 2281.855,
+            "selection_miss": 0.078,
+            "no_correct_candidate": 0.144
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.7965,
+            "token_cost": 2281.855,
+            "selection_miss": 0.0595,
+            "no_correct_candidate": 0.144
+          },
+          "shortest": {
+            "accuracy": 0.7705,
+            "token_cost": 2281.855,
+            "selection_miss": 0.0855,
+            "no_correct_candidate": 0.144
+          }
+        }
+      },
+      "8": {
+        "oracle_coverage": 0.882,
+        "distinct_groups": 2.3035,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.142,
+            "no_correct_candidate": 0.118
+          },
+          "self_consistency": {
+            "accuracy": 0.82,
+            "token_cost": 4586.612,
+            "selection_miss": 0.062,
+            "no_correct_candidate": 0.118
+          },
+          "best_logp": {
+            "accuracy": 0.7355,
+            "token_cost": 4586.612,
+            "selection_miss": 0.1465,
+            "no_correct_candidate": 0.118
+          },
+          "best_selfcert": {
+            "accuracy": 0.77,
+            "token_cost": 4586.612,
+            "selection_miss": 0.112,
+            "no_correct_candidate": 0.118
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.8195,
+            "token_cost": 4586.612,
+            "selection_miss": 0.0625,
+            "no_correct_candidate": 0.118
+          },
+          "shortest": {
+            "accuracy": 0.765,
+            "token_cost": 4586.612,
+            "selection_miss": 0.117,
+            "no_correct_candidate": 0.118
+          }
+        }
+      },
+      "16": {
+        "oracle_coverage": 0.913,
+        "distinct_groups": 3.2315,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.173,
+            "no_correct_candidate": 0.087
+          },
+          "self_consistency": {
+            "accuracy": 0.829,
+            "token_cost": 9163.328,
+            "selection_miss": 0.084,
+            "no_correct_candidate": 0.087
+          },
+          "best_logp": {
+            "accuracy": 0.719,
+            "token_cost": 9163.328,
+            "selection_miss": 0.194,
+            "no_correct_candidate": 0.087
+          },
+          "best_selfcert": {
+            "accuracy": 0.771,
+            "token_cost": 9163.328,
+            "selection_miss": 0.142,
+            "no_correct_candidate": 0.087
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.8265,
+            "token_cost": 9163.328,
+            "selection_miss": 0.0865,
+            "no_correct_candidate": 0.087
+          },
+          "shortest": {
+            "accuracy": 0.768,
+            "token_cost": 9163.328,
+            "selection_miss": 0.145,
+            "no_correct_candidate": 0.087
+          }
+        }
+      },
+      "32": {
+        "oracle_coverage": 0.94,
+        "distinct_groups": 4.65,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.74,
+            "token_cost": 571.2935,
+            "selection_miss": 0.2,
+            "no_correct_candidate": 0.06
+          },
+          "self_consistency": {
+            "accuracy": 0.825,
+            "token_cost": 18322.4,
+            "selection_miss": 0.115,
+            "no_correct_candidate": 0.06
+          },
+          "best_logp": {
+            "accuracy": 0.705,
+            "token_cost": 18322.4,
+            "selection_miss": 0.235,
+            "no_correct_candidate": 0.06
+          },
+          "best_selfcert": {
+            "accuracy": 0.755,
+            "token_cost": 18322.4,
+            "selection_miss": 0.185,
+            "no_correct_candidate": 0.06
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.825,
+            "token_cost": 18322.4,
+            "selection_miss": 0.115,
+            "no_correct_candidate": 0.06
+          },
+          "shortest": {
+            "accuracy": 0.76,
+            "token_cost": 18322.4,
+            "selection_miss": 0.18,
+            "no_correct_candidate": 0.06
+          }
+        }
+      }
+    },
+    "contrasts": {
+      "N8:first_ans-self_consistency": {
+        "diff": -0.08,
+        "ci95": [
+          -0.10099999999999999,
+          -0.0579875
+        ]
+      },
+      "N8:best_logp-self_consistency": {
+        "diff": -0.08449999999999999,
+        "ci95": [
+          -0.11350000000000002,
+          -0.056999999999999995
+        ]
+      },
+      "N8:best_selfcert-self_consistency": {
+        "diff": -0.05,
+        "ci95": [
+          -0.07200000000000001,
+          -0.02848750000000001
+        ]
+      },
+      "N8:rwc_selfcert-self_consistency": {
+        "diff": -0.0005000000000000004,
+        "ci95": [
+          -0.0075,
+          0.005999999999999998
+        ]
+      },
+      "N8:shortest-self_consistency": {
+        "diff": -0.055,
+        "ci95": [
+          -0.0790125,
+          -0.03
+        ]
+      },
+      "N8:self_consistency-first_ans": {
+        "diff": 0.08,
+        "ci95": [
+          0.05798749999999999,
+          0.10099999999999999
+        ]
+      },
+      "N8:rwc_selfcert-best_selfcert": {
+        "diff": 0.049499999999999995,
+        "ci95": [
+          0.028999999999999998,
+          0.07001249999999999
+        ]
+      },
+      "N8:best_selfcert-best_logp": {
+        "diff": 0.0345,
+        "ci95": [
+          0.012475000000000002,
+          0.059000000000000004
+        ]
+      },
+      "N32:first_ans-self_consistency": {
+        "diff": -0.085,
+        "ci95": [
+          -0.11149999999999999,
+          -0.05548750000000001
+        ]
+      },
+      "N32:best_logp-self_consistency": {
+        "diff": -0.12,
+        "ci95": [
+          -0.17,
+          -0.07
+        ]
+      },
+      "N32:best_selfcert-self_consistency": {
+        "diff": -0.07,
+        "ci95": [
+          -0.115,
+          -0.03
+        ]
+      },
+      "N32:rwc_selfcert-self_consistency": {
+        "diff": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "N32:shortest-self_consistency": {
+        "diff": -0.065,
+        "ci95": [
+          -0.11,
+          -0.015
+        ]
+      },
+      "N32:self_consistency-first_ans": {
+        "diff": 0.085,
+        "ci95": [
+          0.0554875,
+          0.11149999999999999
+        ]
+      },
+      "N32:rwc_selfcert-best_selfcert": {
+        "diff": 0.07,
+        "ci95": [
+          0.03,
+          0.115
+        ]
+      },
+      "N32:best_selfcert-best_logp": {
+        "diff": 0.05,
+        "ci95": [
+          0.004875000000000007,
+          0.1
+        ]
+      }
+    }
+  },
+  "eval": {
+    "n_questions": 800,
+    "budgets": {
+      "1": {
+        "oracle_coverage": 0.6435,
+        "distinct_groups": 1.0,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          },
+          "self_consistency": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          },
+          "best_logp": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          },
+          "best_selfcert": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          },
+          "shortest": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.0,
+            "no_correct_candidate": 0.3565
+          }
+        }
+      },
+      "2": {
+        "oracle_coverage": 0.724875,
+        "distinct_groups": 1.370875,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.081375,
+            "no_correct_candidate": 0.275125
+          },
+          "self_consistency": {
+            "accuracy": 0.6435,
+            "token_cost": 1339.8655,
+            "selection_miss": 0.081375,
+            "no_correct_candidate": 0.275125
+          },
+          "best_logp": {
+            "accuracy": 0.658,
+            "token_cost": 1339.8655,
+            "selection_miss": 0.066875,
+            "no_correct_candidate": 0.275125
+          },
+          "best_selfcert": {
+            "accuracy": 0.667625,
+            "token_cost": 1339.8655,
+            "selection_miss": 0.05725,
+            "no_correct_candidate": 0.275125
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.667625,
+            "token_cost": 1339.8655,
+            "selection_miss": 0.05725,
+            "no_correct_candidate": 0.275125
+          },
+          "shortest": {
+            "accuracy": 0.652875,
+            "token_cost": 1339.8655,
+            "selection_miss": 0.072,
+            "no_correct_candidate": 0.275125
+          }
+        }
+      },
+      "4": {
+        "oracle_coverage": 0.79075,
+        "distinct_groups": 1.92775,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.14725,
+            "no_correct_candidate": 0.20925
+          },
+          "self_consistency": {
+            "accuracy": 0.692,
+            "token_cost": 2679.694125,
+            "selection_miss": 0.09875,
+            "no_correct_candidate": 0.20925
+          },
+          "best_logp": {
+            "accuracy": 0.672375,
+            "token_cost": 2679.694125,
+            "selection_miss": 0.118375,
+            "no_correct_candidate": 0.20925
+          },
+          "best_selfcert": {
+            "accuracy": 0.68775,
+            "token_cost": 2679.694125,
+            "selection_miss": 0.103,
+            "no_correct_candidate": 0.20925
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.697,
+            "token_cost": 2679.694125,
+            "selection_miss": 0.09375,
+            "no_correct_candidate": 0.20925
+          },
+          "shortest": {
+            "accuracy": 0.652,
+            "token_cost": 2679.694125,
+            "selection_miss": 0.13875,
+            "no_correct_candidate": 0.20925
+          }
+        }
+      },
+      "8": {
+        "oracle_coverage": 0.8435,
+        "distinct_groups": 2.7405,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.2,
+            "no_correct_candidate": 0.1565
+          },
+          "self_consistency": {
+            "accuracy": 0.717875,
+            "token_cost": 5344.1085,
+            "selection_miss": 0.125625,
+            "no_correct_candidate": 0.1565
+          },
+          "best_logp": {
+            "accuracy": 0.675375,
+            "token_cost": 5344.1085,
+            "selection_miss": 0.168125,
+            "no_correct_candidate": 0.1565
+          },
+          "best_selfcert": {
+            "accuracy": 0.701375,
+            "token_cost": 5344.1085,
+            "selection_miss": 0.142125,
+            "no_correct_candidate": 0.1565
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.728625,
+            "token_cost": 5344.1085,
+            "selection_miss": 0.114875,
+            "no_correct_candidate": 0.1565
+          },
+          "shortest": {
+            "accuracy": 0.645625,
+            "token_cost": 5344.1085,
+            "selection_miss": 0.197875,
+            "no_correct_candidate": 0.1565
+          }
+        }
+      },
+      "16": {
+        "oracle_coverage": 0.8845,
+        "distinct_groups": 4.00375,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.241,
+            "no_correct_candidate": 0.1155
+          },
+          "self_consistency": {
+            "accuracy": 0.731125,
+            "token_cost": 10677.74275,
+            "selection_miss": 0.153375,
+            "no_correct_candidate": 0.1155
+          },
+          "best_logp": {
+            "accuracy": 0.663875,
+            "token_cost": 10677.74275,
+            "selection_miss": 0.220625,
+            "no_correct_candidate": 0.1155
+          },
+          "best_selfcert": {
+            "accuracy": 0.707,
+            "token_cost": 10677.74275,
+            "selection_miss": 0.1775,
+            "no_correct_candidate": 0.1155
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.7465,
+            "token_cost": 10677.74275,
+            "selection_miss": 0.138,
+            "no_correct_candidate": 0.1155
+          },
+          "shortest": {
+            "accuracy": 0.631625,
+            "token_cost": 10677.74275,
+            "selection_miss": 0.252875,
+            "no_correct_candidate": 0.1155
+          }
+        }
+      },
+      "32": {
+        "oracle_coverage": 0.91375,
+        "distinct_groups": 5.905,
+        "methods": {
+          "first_ans": {
+            "accuracy": 0.6435,
+            "token_cost": 669.772625,
+            "selection_miss": 0.27025,
+            "no_correct_candidate": 0.08625
+          },
+          "self_consistency": {
+            "accuracy": 0.737875,
+            "token_cost": 21347.0175,
+            "selection_miss": 0.175875,
+            "no_correct_candidate": 0.08625
+          },
+          "best_logp": {
+            "accuracy": 0.64,
+            "token_cost": 21347.0175,
+            "selection_miss": 0.27375,
+            "no_correct_candidate": 0.08625
+          },
+          "best_selfcert": {
+            "accuracy": 0.70625,
+            "token_cost": 21347.0175,
+            "selection_miss": 0.2075,
+            "no_correct_candidate": 0.08625
+          },
+          "rwc_selfcert": {
+            "accuracy": 0.7555,
+            "token_cost": 21347.0175,
+            "selection_miss": 0.15825,
+            "no_correct_candidate": 0.08625
+          },
+          "shortest": {
+            "accuracy": 0.62375,
+            "token_cost": 21347.0175,
+            "selection_miss": 0.29,
+            "no_correct_candidate": 0.08625
+          }
+        }
+      }
+    },
+    "contrasts": {
+      "N8:first_ans-self_consistency": {
+        "diff": -0.074375,
+        "ci95": [
+          -0.085378125,
+          -0.06375
+        ]
+      },
+      "N8:best_logp-self_consistency": {
+        "diff": -0.0425,
+        "ci95": [
+          -0.0565,
+          -0.028996875000000002
+        ]
+      },
+      "N8:best_selfcert-self_consistency": {
+        "diff": -0.0165,
+        "ci95": [
+          -0.02825,
+          -0.0037468750000000037
+        ]
+      },
+      "N8:rwc_selfcert-self_consistency": {
+        "diff": 0.010749999999999997,
+        "ci95": [
+          0.004621874999999998,
+          0.016878124999999997
+        ]
+      },
+      "N8:shortest-self_consistency": {
+        "diff": -0.07225000000000001,
+        "ci95": [
+          -0.08625624999999999,
+          -0.057621875
+        ]
+      },
+      "N8:self_consistency-first_ans": {
+        "diff": 0.074375,
+        "ci95": [
+          0.06375,
+          0.08537812499999999
+        ]
+      },
+      "N8:rwc_selfcert-best_selfcert": {
+        "diff": 0.027249999999999996,
+        "ci95": [
+          0.018121875,
+          0.036753125
+        ]
+      },
+      "N8:best_selfcert-best_logp": {
+        "diff": 0.025999999999999995,
+        "ci95": [
+          0.013375,
+          0.03900312500000001
+        ]
+      },
+      "N32:first_ans-self_consistency": {
+        "diff": -0.094375,
+        "ci95": [
+          -0.11100625000000001,
+          -0.07849375
+        ]
+      },
+      "N32:best_logp-self_consistency": {
+        "diff": -0.09787500000000002,
+        "ci95": [
+          -0.124125,
+          -0.07200000000000001
+        ]
+      },
+      "N32:best_selfcert-self_consistency": {
+        "diff": -0.03162499999999999,
+        "ci95": [
+          -0.055628125,
+          -0.008371875
+        ]
+      },
+      "N32:rwc_selfcert-self_consistency": {
+        "diff": 0.017625,
+        "ci95": [
+          0.006746875000000001,
+          0.028006249999999993
+        ]
+      },
+      "N32:shortest-self_consistency": {
+        "diff": -0.11412500000000002,
+        "ci95": [
+          -0.140875,
+          -0.08961562499999999
+        ]
+      },
+      "N32:self_consistency-first_ans": {
+        "diff": 0.094375,
+        "ci95": [
+          0.07849375,
+          0.11100625000000001
+        ]
+      },
+      "N32:rwc_selfcert-best_selfcert": {
+        "diff": 0.049249999999999995,
+        "ci95": [
+          0.0275,
+          0.07225625
+        ]
+      },
+      "N32:best_selfcert-best_logp": {
+        "diff": 0.06625,
+        "ci95": [
+          0.0425,
+          0.09125
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Data & Controller & $\tau$ & $\delta$ & Acc. & Tokens & Rollouts & Stop @4/8/16/32 (\%) & Recoverable early stops \\
+\midrule
+MATH & agreement & 0.625 & -- & 73.6 & 10.1k & 11.8 & 66 / 6 / 1 / 27 & 0.64 \\
+ & quality-aware & 0.5 & 0.0 & 73.2 & 7.7k & 9.0 & 76 / 6 / 1 / 16 & 1.64 \\
+ & fixed-32 SC & -- & -- & 73.8 & 21.3k & 32.0 & 0 / 0 / 0 / 100 & -- \\
+\midrule
+MathVista & agreement & 0.5 & -- & 63.0 & 2.9k & 8.3 & 77 / 8 / 2 / 13 & 4.06 \\
+ & quality-aware & 0.5 & 0.0 & 63.3 & 3.3k & 9.5 & 70 / 10 / 3 / 17 & 3.24 \\
+ & fixed-32 SC & -- & -- & 63.8 & 8.9k & 32.0 & 0 / 0 / 0 / 100 & -- \\
+\bottomrule
+\end{tabular}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Adaptive sampling on the held-out split with development-selected thresholds.}
+\label{tab:t3-adaptive}
+\end{table}

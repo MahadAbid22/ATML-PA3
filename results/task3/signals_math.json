@@ -1,0 +1,28 @@
+{
+  "n_questions": 800,
+  "scores": {
+    "logp_L": {
+      "top_minus_bottom_quartile_all": 0.07828125,
+      "top_minus_bottom_quartile_mixed": 0.13352878464818763,
+      "spearman_with_correct_mixed": 0.13401181953820634,
+      "spearman_with_length": 0.22450990220048075
+    },
+    "selfcert_K": {
+      "top_minus_bottom_quartile_all": 0.11984375,
+      "top_minus_bottom_quartile_mixed": 0.20442430703624734,
+      "spearman_with_correct_mixed": 0.19804108649285113,
+      "spearman_with_length": -0.16109595817293734
+    },
+    "neg_length": {
+      "top_minus_bottom_quartile_all": 0.045625,
+      "top_minus_bottom_quartile_mixed": 0.07782515991471216,
+      "spearman_with_correct_mixed": 0.07632595054396821,
+      "spearman_with_length": -1.0
+    }
+  },
+  "n_mixed": 469,
+  "length_correct_vs_incorrect_tokens": {
+    "mean_tokens_correct": 728.9293089289656,
+    "mean_tokens_incorrect": 816.3599226381695
+  }
+}

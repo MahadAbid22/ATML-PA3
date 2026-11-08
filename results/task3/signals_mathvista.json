@@ -1,0 +1,67 @@
+{
+  "n_questions": 800,
+  "scores": {
+    "logp_L": {
+      "top_minus_bottom_quartile_all": 0.019375,
+      "top_minus_bottom_quartile_mixed": 0.024256651017214397,
+      "spearman_with_correct_mixed": 0.033288387888463083,
+      "spearman_with_length": 0.32898145589581074
+    },
+    "selfcert_K": {
+      "top_minus_bottom_quartile_all": 0.03625,
+      "top_minus_bottom_quartile_mixed": 0.04538341158059468,
+      "spearman_with_correct_mixed": 0.04917600810770671,
+      "spearman_with_length": 0.3493334725284418
+    },
+    "neg_length": {
+      "top_minus_bottom_quartile_all": 0.03578125,
+      "top_minus_bottom_quartile_mixed": 0.044796557120500784,
+      "spearman_with_correct_mixed": 0.04302703420123677,
+      "spearman_with_length": -1.0
+    },
+    "vision_V": {
+      "top_minus_bottom_quartile_all": 0.03328125,
+      "top_minus_bottom_quartile_mixed": 0.041666666666666664,
+      "spearman_with_correct_mixed": 0.034684251131432545,
+      "spearman_with_length": -0.6857520445845515
+    },
+    "calibconf_C": {
+      "top_minus_bottom_quartile_all": 0.03921875,
+      "top_minus_bottom_quartile_mixed": 0.04910015649452269,
+      "spearman_with_correct_mixed": 0.04963835673907402,
+      "spearman_with_length": 0.34690601446077507
+    },
+    "visconf_Z": {
+      "top_minus_bottom_quartile_all": 0.07140625,
+      "top_minus_bottom_quartile_mixed": 0.08939749608763693,
+      "spearman_with_correct_mixed": 0.08537806159569829,
+      "spearman_with_length": -0.2750367811900654
+    },
+    "visconf_token_Ztok": {
+      "top_minus_bottom_quartile_all": 0.06921875,
+      "top_minus_bottom_quartile_mixed": 0.08665884194053208,
+      "spearman_with_correct_mixed": 0.0763556248693628,
+      "spearman_with_length": -0.32180257067151957
+    }
+  },
+  "n_mixed": 639,
+  "length_correct_vs_incorrect_tokens": {
+    "mean_tokens_correct": 259.8438291763179,
+    "mean_tokens_incorrect": 339.10067503127186
+  },
+  "confidence_vision_correlation": {
+    "per_question_mean": -0.21099388060014498,
+    "median": -0.2115446336116984,
+    "q10": -0.4006360091009196,
+    "q90": 0.005566476849783619,
+    "frac_questions_positive": 0.10625,
+    "mean_correct_rollouts": -0.20041247493756356,
+    "mean_incorrect_rollouts": -0.2230519942313534
+  },
+  "tokenwise_minus_trajectory_fusion": {
+    "mean": -0.0022433811298942143,
+    "mean_abs": 0.0026404020378742368,
+    "std": 0.002692019162722063,
+    "frac_positive": 0.1480859375
+  }
+}

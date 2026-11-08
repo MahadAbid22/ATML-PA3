@@ -1,0 +1,38 @@
+{
+  "n_questions": 50,
+  "transitions_initial_to_revised": {
+    "wrong_to_correct": 4,
+    "correct_to_wrong": 0,
+    "correct_to_correct": 29,
+    "wrong_to_wrong": 17
+  },
+  "strategies": {
+    "single": {
+      "accuracy": 0.64,
+      "mean_input_tokens": 108.38,
+      "mean_output_tokens": 652.0,
+      "mean_total_tokens": 760.38,
+      "mean_seconds": 12.767707164967433,
+      "truncation_rate_calls": 0.0,
+      "final_extraction_failure_rate": 0.0
+    },
+    "parallel": {
+      "accuracy": 0.58,
+      "mean_input_tokens": 325.14,
+      "mean_output_tokens": 1869.84,
+      "mean_total_tokens": 2194.98,
+      "mean_seconds": 36.56115036303177,
+      "truncation_rate_calls": 0.18,
+      "final_extraction_failure_rate": 0.2
+    },
+    "refinement": {
+      "accuracy": 0.66,
+      "mean_input_tokens": 880.6,
+      "mean_output_tokens": 1213.28,
+      "mean_total_tokens": 2093.88,
+      "mean_seconds": 23.82825067028403,
+      "truncation_rate_calls": 0.1,
+      "final_extraction_failure_rate": 0.0
+    }
+  }
+}

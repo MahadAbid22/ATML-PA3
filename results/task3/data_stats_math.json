@@ -1,0 +1,20 @@
+{
+  "questions": 1000,
+  "rollouts": 32000,
+  "retained_tokens": 20742094,
+  "capped_rollouts": 523,
+  "no_answer_rollouts": 521,
+  "rollout_accuracy": 0.66315625,
+  "oracle_at_32": 0.919,
+  "mean_distinct_groups_at_32": 5.654,
+  "checks": {
+    "rows": 32000,
+    "logp_len_eq_tokens": true,
+    "kl_len_eq_tokens": true,
+    "scalar_len_eq_tokens": true,
+    "zero_length_rollouts": 0,
+    "string_fallback_questions": [
+      "test:4928"
+    ]
+  }
+}

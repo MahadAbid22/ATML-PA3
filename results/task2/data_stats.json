@@ -1,0 +1,45 @@
+{
+  "captions_train": 18000,
+  "captions_dev": 96,
+  "presence_pool": 6000,
+  "counting_pool": 3000,
+  "vqa_train": 1536,
+  "grounding_dev": 24,
+  "grounding_test": 64,
+  "vqa_dev": 32,
+  "vqa_test": 96,
+  "isolation": {
+    "suites_pairwise_disjoint": true,
+    "eval_disjoint_from_training": true,
+    "eval_images": {
+      "caption_dev": 96,
+      "grounding_dev": 48,
+      "grounding_test": 128,
+      "vqa_dev": 64,
+      "vqa_test": 192
+    },
+    "train_images": 8753,
+    "train_split": "train2014",
+    "eval_split": "val2014"
+  },
+  "vqa_candidate_pairs": {
+    "train": {
+      "other": 17375,
+      "yes/no": 44033,
+      "number": 10561
+    },
+    "val": {
+      "yes/no": 20963,
+      "other": 8039,
+      "number": 4923
+    }
+  },
+  "grounding_train_categories_presence": 80,
+  "grounding_train_categories_counting": 77,
+  "counting_answer_hist_train": {
+    "2": 1675,
+    "1": 1705,
+    "4": 1252,
+    "3": 1368
+  }
+}

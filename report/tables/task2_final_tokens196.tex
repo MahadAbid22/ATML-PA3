@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Suite & Image & Acc. [95\% CI] & By type & Pair acc. & Identical & Follows partner & Empty & Ref. NLL \\
+\midrule
+Grounding & Correct & 68.0 [59, 77] & 39 / 97 & 56.2 & 21.9 & 14.1 & 0.0 & 0.83 \\
+ & Compl. swap & 14.1 [8, 21] & 25 / 3 & 3.1 & 21.9 & 68.0 & 0.0 & 3.76 \\
+ & Mismatched & 35.2 [29, 41] & 22 / 48 & 3.1 & 82.8 & 36.7 & 0.0 & 2.48 \\
+ & No image & 36.7 [31, 41] & 23 / 50 & 0.0 & 100.0 & 36.7 & 0.0 & 1.30 \\
+\midrule
+VQAv2 & Correct & 59.1 [52, 66] & 48 / 57 / 69 & 33.3 & 37.5 & 22.4 & 0.0 & 1.29 \\
+ & Compl. swap & 25.2 [19, 31] & 15 / 13 / 44 & 4.2 & 37.5 & 56.8 & 0.0 & 2.66 \\
+ & Mismatched & 32.6 [27, 38] & 21 / 17 / 55 & 1.0 & 76.0 & 32.3 & 0.0 & 2.44 \\
+ & No image & 31.0 [26, 36] & 28 / 11 / 53 & 0.0 & 100.0 & 29.2 & 0.0 & 2.12 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize Grounding types: counting / presence; VQAv2: number / other / yes/no.}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Task 2 final-test results under four image conditions.}
+\label{tab:t2-final}
+\end{table}

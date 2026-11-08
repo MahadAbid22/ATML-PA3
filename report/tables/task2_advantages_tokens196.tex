@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Suite & Control & $\Delta$Acc (pp) & $\Delta$NLL \\
+\midrule
+Grounding & Compl. swap & +53.9 [+39.1, +68.0] & +2.92 [+2.30, +3.57] \\
+ & Mismatched & +32.8 [+24.2, +41.4] & +1.65 [+1.29, +2.03] \\
+ & No image & +31.2 [+22.7, +39.1] & +0.46 [+0.28, +0.65] \\
+VQAv2 & Compl. swap & +33.9 [+23.6, +44.3] & +1.37 [+0.99, +1.78] \\
+ & Mismatched & +26.6 [+18.2, +34.9] & +1.15 [+0.83, +1.48] \\
+ & No image & +28.1 [+20.4, +35.9] & +0.82 [+0.52, +1.13] \\
+\bottomrule
+\end{tabular}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Correct-image advantage over each control (paired pair-bootstrap, 4,000 resamples).}
+\label{tab:t2-adv}
+\end{table}

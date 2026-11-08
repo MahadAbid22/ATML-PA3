@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lllrl}
+\toprule
+Phase & Size & Time (min) & Peak mem (GB) & Notes \\
+\midrule
+Feature caching (SigLIP) & 9281 images & 1.0 & 0.7 & -- \\
+Train: caption_alignment & 1.84M trainable & 9.2 & 2.6 & conn 1.84M, LoRA 0.00M \\
+Train: visual_instruction & 6.42M trainable & 9.6 & 2.6 & conn 1.84M, LoRA 4.59M \\
+Train: natural_vqa & 6.42M trainable & 4.8 & 2.6 & conn 1.84M, LoRA 4.59M \\
+Generation (test) & 16 tokens, batch 8 & 10 ms/answer & 1.9 & -- \\
+\bottomrule
+\end{tabular}
+% Placeholder caption listing the contents only - replace with your own wording.
+\caption{Task 2 compute resources.}
+\label{tab:t2-res}
+\end{table}

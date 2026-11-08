@@ -1,0 +1,35 @@
+{
+  "n_images": 9281,
+  "model_load_seconds": 5.609423533082008,
+  "encode_seconds": 59.376965784002095,
+  "decode_preprocess_seconds": 46.99927436886355,
+  "feature_bytes": 2794100736,
+  "dtype": "float16",
+  "layernorm_check": {
+    "max_abs_diff_last_vs_post_ln(encoder_out)": 0.0,
+    "max_abs_diff_last_vs_double_ln": 104.0,
+    "shape": [
+      64,
+      196,
+      768
+    ]
+  },
+  "gpu": {
+    "peak_allocated_gb": 0.7115559577941895,
+    "peak_reserved_gb": 0.7890625
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.2",
+    "datasets": "5.1.0",
+    "lm_eval": "0.4.13",
+    "math_verify": "unknown",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

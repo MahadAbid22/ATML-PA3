@@ -1,0 +1,60 @@
+# Task 2 - SigLIP-Qwen VLM and visual grounding (values from the assignment unless marked "choice")
+seed: 6304
+llm: Qwen/Qwen3-0.6B
+llm_revision: null
+vision: google/siglip-base-patch16-224
+vision_revision: null
+visual_tokens: 196            # 49 for the optional 2x2-pooled run
+
+data:
+  caption_train_images: 6000
+  captions_per_train_image: 3
+  caption_dev_images: 96
+  grounding:
+    dev_pairs: {presence: 12, counting: 12}        # choice: 24 dev pairs split evenly
+    test_pairs: {presence: 32, counting: 32}       # choice: 64 test pairs split evenly
+    train_pool: {presence: 6000, counting: 3000}   # choice: reusable training pair pools
+    presence_min_area: 0.01     # choice: positive needs an instance covering >= 1% of the image
+    count_min_area: 0.0025      # choice: every counted instance covers >= 0.25% of the image
+    count_range: [1, 4]
+  vqa:
+    min_agree: 8                # consensus answer given by >= 8 of 10 annotators, for each image
+    train: {"yes/no": 640, number: 256, other: 640}
+    dev: {"yes/no": 12, number: 8, other: 12}
+    test: {"yes/no": 36, number: 24, other: 36}
+
+caps:                           # content-token caps
+  question: 80
+  caption: 64
+  answer: 16
+
+prompts:                        # choice: instruction wording (kept fixed for every condition)
+  caption: "Write a short caption for this image."
+  qa_suffix: "Answer the question using a single word or phrase."
+
+train:
+  micro_batch: 8
+  grad_accum: 2                 # effective batch 16
+  weight_decay: 0.01            # biases and <2-D parameters excluded (as in Task 1)
+  betas: [0.9, 0.999]
+  clip: 1.0
+  warmup_frac: 0.05
+  final_lr_frac: 0.10           # cosine decay to 10% of peak
+  checkpoint_every: 250
+  dev_every: 500
+  calibration_images: 512       # training images used to calibrate connector output scale
+
+stages:
+  - {name: caption_alignment, updates: 2250, lr_connector: 1.0e-3, lr_lora: null,
+     mix: {caption: 1.0}}
+  - {name: visual_instruction, updates: 1500, lr_connector: 1.0e-4, lr_lora: 2.0e-5,
+     mix: {presence: 0.50, counting: 0.25, caption: 0.25}}
+  - {name: natural_vqa, updates: 750, lr_connector: 5.0e-5, lr_lora: 1.0e-5,
+     mix: {vqa: 0.70, presence: 0.10, counting: 0.10, caption: 0.10}}
+
+lora: {r: 16, alpha: 32, dropout: 0.05, targets: [q_proj, k_proj, v_proj, o_proj]}
+
+eval:
+  max_new_tokens: 16
+  batch_size: 8
+  bootstrap: 4000
